@@ -1,29 +1,29 @@
 # 服务器运行状态
 
-**心跳**: 2026-08-21 14:02:02 UTC / 北京时间 2026-08-21 22:02:02
+**心跳**: 2026-08-21 14:07:01 UTC / 北京时间 2026-08-21 22:07:01
 
 ## 游戏服
 
 | 服务器 | 状态 | 在线 | 连接 | 运行时长 |
 | --- | --- | --- | --- | --- |
-| 本地测试(100) | running | 3 | 1 | 0d 2h 40m |
-| 正式服(200) | running | 0 | 0 | 0d 4h 30m |
+| 本地测试(100) | running | 3 | 1 | 0d 2h 45m |
+| 正式服(200) | running | 0 | 0 | 0d 4h 35m |
 
 ## Web 服务
 
-- status: ok | 运行 0d 4h 30m | rss 99MB
+- status: ok | 运行 0d 4h 35m | rss 99MB
 
 ## pm2 进程
 
 | 进程 | 状态 | restarts | 内存 | 运行时长 |
 | --- | --- | --- | --- | --- |
-| mud-game-test | online | 3729 | 102MB | 0d 2h 40m |
-| mud-game | online | 3668 | 94MB | 0d 4h 30m |
-| mud-web | online | 3579 | 99MB | 0d 4h 30m |
+| mud-game-test | online | 3729 | 102MB | 0d 2h 45m |
+| mud-game | online | 3668 | 94MB | 0d 4h 35m |
+| mud-web | online | 3579 | 99MB | 0d 4h 35m |
 
 ## 系统
 
-- 内存: 420MB / 3911MB
+- 内存: 421MB / 3911MB
 - 磁盘: 13% 已用（85G 可用）
 - 端口监听: 31300✔ 31301✔ 8088✔
 
@@ -45,7 +45,6 @@
 ## 最近部署（deploy.log 末尾 20 行）
 
 ```
-[2026-08-21 13:55:17] 前端构建完成 da466dd（www/ 已更新）
 
 > msmud@0.0.1 build
 > vite build
@@ -65,4 +64,5 @@ www/assets/index-C1Nv-MwH.js                           355.21 kB │ gzip: 100.1
 
 ✓ built in 414ms
 [2026-08-21 14:00:09] 前端构建完成 da466dd（www/ 已更新）
+[2026-08-21 14:05:05] 跳过：git fetch 失败
 ```
