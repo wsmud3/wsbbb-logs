@@ -1,29 +1,29 @@
 # 服务器运行状态
 
-**心跳**: 2026-08-21 13:47:01 UTC / 北京时间 2026-08-21 21:47:01
+**心跳**: 2026-08-21 13:52:01 UTC / 北京时间 2026-08-21 21:52:01
 
 ## 游戏服
 
 | 服务器 | 状态 | 在线 | 连接 | 运行时长 |
 | --- | --- | --- | --- | --- |
-| 本地测试(100) | running | 3 | 1 | 0d 2h 25m |
-| 正式服(200) | running | 0 | 0 | 0d 4h 15m |
+| 本地测试(100) | running | 3 | 1 | 0d 2h 30m |
+| 正式服(200) | running | 0 | 0 | 0d 4h 20m |
 
 ## Web 服务
 
-- status: ok | 运行 0d 4h 15m | rss 99MB
+- status: ok | 运行 0d 4h 20m | rss 99MB
 
 ## pm2 进程
 
 | 进程 | 状态 | restarts | 内存 | 运行时长 |
 | --- | --- | --- | --- | --- |
-| mud-game-test | online | 3729 | 102MB | 0d 2h 25m |
-| mud-game | online | 3668 | 93MB | 0d 4h 15m |
-| mud-web | online | 3579 | 99MB | 0d 4h 15m |
+| mud-game-test | online | 3729 | 102MB | 0d 2h 30m |
+| mud-game | online | 3668 | 93MB | 0d 4h 20m |
+| mud-web | online | 3579 | 99MB | 0d 4h 20m |
 
 ## 系统
 
-- 内存: 421MB / 3911MB
+- 内存: 423MB / 3911MB
 - 磁盘: 13% 已用（85G 可用）
 - 端口监听: 31300✔ 31301✔ 8088✔
 
@@ -45,7 +45,7 @@
 ## 最近部署（deploy.log 末尾 20 行）
 
 ```
-[2026-08-21 13:40:08] 前端构建完成 da466dd（www/ 已更新）
+[2026-08-21 13:45:09] 前端构建完成 da466dd（www/ 已更新）
 
 > msmud@0.0.1 build
 > vite build
@@ -63,6 +63,6 @@ www/assets/glyphicons-halflings-regular-DrwTMapi.ttf    45.40 kB
 www/assets/index-S8NWkZZ9.css                           21.02 kB │ gzip:   4.93 kB
 www/assets/index-C1Nv-MwH.js                           355.21 kB │ gzip: 100.10 kB
 
-✓ built in 374ms
-[2026-08-21 13:45:09] 前端构建完成 da466dd（www/ 已更新）
+✓ built in 411ms
+[2026-08-21 13:50:07] 前端构建完成 da466dd（www/ 已更新）
 ```
