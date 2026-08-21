@@ -1,29 +1,29 @@
 # 服务器运行状态
 
-**心跳**: 2026-08-21 09:29:37 UTC / 北京时间 2026-08-21 17:29:37
+**心跳**: 2026-08-21 09:32:02 UTC / 北京时间 2026-08-21 17:32:02
 
 ## 游戏服
 
 | 服务器 | 状态 | 在线 | 连接 | 运行时长 |
 | --- | --- | --- | --- | --- |
-| 本地测试(100) | running | 2 | 1 | 0d 0h 13m |
-| 正式服(200) | running | 1 | 0 | 0d 1h 14m |
+| 本地测试(100) | running | 0 | 0 | 0d 0h 0m |
+| 正式服(200) | running | 0 | 0 | 0d 0h 0m |
 
 ## Web 服务
 
-- status: ok | 运行 0d 1h 14m | rss 98MB
+- status: ok | 运行 0d 0h 0m | rss 97MB
 
 ## pm2 进程
 
 | 进程 | 状态 | restarts | 内存 | 运行时长 |
 | --- | --- | --- | --- | --- |
-| mud-game-test | online | 3727 | 89MB | 0d 0h 13m |
-| mud-game | online | 3667 | 90MB | 0d 1h 14m |
-| mud-web | online | 3578 | 98MB | 0d 1h 14m |
+| mud-game-test | online | 3728 | 110MB | 0d 0h 0m |
+| mud-game | online | 3668 | 113MB | 0d 0h 0m |
+| mud-web | online | 3579 | 97MB | 0d 0h 0m |
 
 ## 系统
 
-- 内存: 1406MB / 3911MB
+- 内存: 1438MB / 3911MB
 - 磁盘: 13% 已用（85G 可用）
 - 端口监听: 31300✔ 31301✔ 8088✔
 
@@ -58,10 +58,10 @@ www/index.html                                           0.42 kB │ gzip:   0.2
 www/assets/glyphicons-halflings-regular-BUJKDMgK.eot    20.12 kB
 www/assets/glyphicons-halflings-regular-BKjkU69z.woff   23.42 kB
 www/assets/glyphicons-halflings-regular-DrwTMapi.ttf    45.40 kB
-www/assets/index-DhgEyNAh.css                           21.16 kB │ gzip:   4.94 kB
-www/assets/index-B_-ThnCS.js                           355.69 kB │ gzip: 100.30 kB
+www/assets/index-S8NWkZZ9.css                           21.02 kB │ gzip:   4.93 kB
+www/assets/index-C1Nv-MwH.js                           355.21 kB │ gzip: 100.10 kB
 
-✓ built in 528ms
-[2026-08-21 08:00:08] 前端构建完成 0a640d2（www/ 已更新）
-[2026-08-21 08:15:19] 更新至 2f92e07（快进合并），健康检查通过，已 pm2 reload
+✓ built in 408ms
+[2026-08-21 09:31:05] 前端构建完成 76777b0（www/ 已更新）
+[2026-08-21 09:31:18] 更新至 76777b0（快进合并），健康检查通过，已 pm2 reload
 ```
