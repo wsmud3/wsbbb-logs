@@ -1,6 +1,6 @@
 # 服务器运行状态
 
-**心跳**: 2026-08-21 09:22:58 UTC / 北京时间 2026-08-21 17:22:58
+**心跳**: 2026-08-21 09:27:02 UTC / 北京时间 2026-08-21 17:27:02
 
 ## 游戏服
 
@@ -11,19 +11,19 @@
 
 ## Web 服务
 
-- status: ok | 运行 0d 1h 7m | rss 98MB
+- status: ok | 运行 0d 1h 11m | rss 98MB
 
 ## pm2 进程
 
 | 进程 | 状态 | restarts | 内存 | 运行时长 |
 | --- | --- | --- | --- | --- |
-| mud-game-test | online | 3727 | 89MB | 0d 0h 6m |
-| mud-game | online | 3667 | 90MB | 0d 1h 7m |
-| mud-web | online | 3578 | 98MB | 0d 1h 7m |
+| mud-game-test | online | 3727 | 89MB | 0d 0h 10m |
+| mud-game | online | 3667 | 90MB | 0d 1h 11m |
+| mud-web | online | 3578 | 98MB | 0d 1h 11m |
 
 ## 系统
 
-- 内存: 1368MB / 3911MB
+- 内存: 1384MB / 3911MB
 - 磁盘: 13% 已用（85G 可用）
 - 端口监听: 31300✔ 31301✔ 8088✔
 
