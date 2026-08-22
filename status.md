@@ -1,35 +1,41 @@
 # 服务器运行状态
 
-**心跳**: 2026-08-22 17:57:01 UTC / 北京时间 2026-08-23 01:57:01
+**心跳**: 2026-08-22 18:02:01 UTC / 北京时间 2026-08-23 02:02:01
 
 ## 游戏服
 
 | 服务器 | 状态 | 在线 | 连接 | 运行时长 |
 | --- | --- | --- | --- | --- |
-| 本地测试(100) | running | 1 | 0 | 0d 0h 11m |
-| 正式服(200) | running | 0 | 0 | 0d 0h 11m |
+| 本地测试(100) | running | 1 | 1 | 0d 0h 1m |
+| 正式服(200) | running | 0 | 0 | 0d 0h 1m |
 
 ## Web 服务
 
-- status: ok | 运行 0d 0h 11m | rss 90MB
+- status: ok | 运行 0d 0h 1m | rss 88MB
 
 ## pm2 进程
 
 | 进程 | 状态 | restarts | 内存 | 运行时长 |
 | --- | --- | --- | --- | --- |
-| mud-game-test | online | 3746 | 89MB | 0d 0h 11m |
-| mud-game | online | 3675 | 87MB | 0d 0h 11m |
-| mud-web | online | 3585 | 90MB | 0d 0h 11m |
+| mud-game-test | online | 3747 | 88MB | 0d 0h 1m |
+| mud-game | online | 3676 | 86MB | 0d 0h 1m |
+| mud-web | online | 3586 | 88MB | 0d 0h 1m |
 
 ## 系统
 
-- 内存: 400MB / 3911MB
+- 内存: 436MB / 3911MB
 - 磁盘: 13% 已用（85G 可用）
 - 端口监听: 31300✔ 31301✔ 8088✔
 
 ## 今日日志（UTC 2026-08-22）
 
-- warn: 0 | error: 0 | fatal: 12
+- warn: 0 | error: 1 | fatal: 12
+
+### 今日 error（最近 10 条）
+
+```
+[2026-08-22 17:59:04] [ERROR] 未处理的Promise拒绝 | {"reason":"ReferenceError: pars is not defined"}
+```
 
 ### 今日 fatal（最近 10 条）
 
@@ -49,7 +55,6 @@
 ## 最近部署（deploy.log 末尾 20 行）
 
 ```
-[2026-08-22 17:50:06] 前端构建完成 7bca3bc（www/ 已更新）
 
 > msmud@0.0.1 build
 > vite build
@@ -67,6 +72,7 @@ www/assets/glyphicons-halflings-regular-DrwTMapi.ttf    45.40 kB
 www/assets/index-CBFwBfKv.css                           21.25 kB │ gzip:   4.96 kB
 www/assets/index-WuC3f3_8.js                           355.83 kB │ gzip: 100.36 kB
 
-✓ built in 386ms
-[2026-08-22 17:55:07] 前端构建完成 7bca3bc（www/ 已更新）
+✓ built in 431ms
+[2026-08-22 18:00:07] 前端构建完成 571581f（www/ 已更新）
+[2026-08-22 18:00:20] 更新至 571581f（快进合并），健康检查通过，已 pm2 reload
 ```
