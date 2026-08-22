@@ -1,40 +1,39 @@
 # 服务器运行状态
 
-**心跳**: 2026-08-22 11:52:02 UTC / 北京时间 2026-08-22 19:52:02
+**心跳**: 2026-08-22 11:57:01 UTC / 北京时间 2026-08-22 19:57:01
 
 ## 游戏服
 
 | 服务器 | 状态 | 在线 | 连接 | 运行时长 |
 | --- | --- | --- | --- | --- |
-| 本地测试(100) | running | 2 | 0 | 0d 1h 8m |
-| 正式服(200) | running | 0 | 0 | 1d 2h 20m |
+| 本地测试(100) | running | 2 | 0 | 0d 1h 13m |
+| 正式服(200) | running | 0 | 0 | 0d 0h 3m |
 
 ## Web 服务
 
-- status: ok | 运行 1d 2h 20m | rss 100MB
+- status: ok | 运行 1d 2h 25m | rss 100MB
 
 ## pm2 进程
 
 | 进程 | 状态 | restarts | 内存 | 运行时长 |
 | --- | --- | --- | --- | --- |
-| mud-game-test | online | 3740 | 92MB | 0d 1h 8m |
-| mud-game | online | 3668 | 99MB | 1d 2h 20m |
-| mud-web | online | 3579 | 100MB | 1d 2h 20m |
+| mud-game-test | online | 3740 | 93MB | 0d 1h 13m |
+| mud-game | online | 3669 | 86MB | 0d 0h 3m |
+| mud-web | online | 3579 | 100MB | 1d 2h 25m |
 
 ## 系统
 
-- 内存: 421MB / 3911MB
+- 内存: 449MB / 3911MB
 - 磁盘: 13% 已用（85G 可用）
 - 端口监听: 31300✔ 31301✔ 8088✔
 
 ## 今日日志（UTC 2026-08-22）
 
-- warn: 0 | error: 0 | fatal: 11
+- warn: 0 | error: 0 | fatal: 12
 
 ### 今日 fatal（最近 10 条）
 
 ```
-[2026-08-22 02:27:00] [FATAL] 未捕获异常 | {"message":"Cannot read properties of undefined (reading 'is_equipment')","stack":"TypeError: Cannot read properties of undefined (reading 'is_equipment')\n    at USER.fb_quick (/home/mud/mud/world/cmd/action/cr.js:115:22)\n    at Timeout._onTimeout (/home/mud/mud/os/base.js:116:13)\n    at listOnTimeout (node:internal/timers:605:17)\n    at process.processTimers (node:internal/timers:541:7)"}
 [2026-08-22 02:27:00] [FATAL] 未捕获异常 | {"message":"Cannot read properties of undefined (reading 'is_equipment')","stack":"TypeError: Cannot read properties of undefined (reading 'is_equipment')\n    at USER.fb_quick (/home/mud/mud/world/cmd/action/cr.js:115:22)\n    at Timeout._onTimeout (/home/mud/mud/os/base.js:116:13)\n    at listOnTimeout (node:internal/timers:605:17)\n    at process.processTimers (node:internal/timers:541:7)"}
 [2026-08-22 02:27:35] [FATAL] 未捕获异常 | {"message":"Cannot read properties of undefined (reading 'is_equipment')","stack":"TypeError: Cannot read properties of undefined (reading 'is_equipment')\n    at USER.fb_quick (/home/mud/mud/world/cmd/action/cr.js:115:22)\n    at Timeout._onTimeout (/home/mud/mud/os/base.js:116:13)\n    at listOnTimeout (node:internal/timers:605:17)\n    at process.processTimers (node:internal/timers:541:7)"}
 [2026-08-22 02:27:51] [FATAL] 未捕获异常 | {"message":"Cannot read properties of undefined (reading 'is_equipment')","stack":"TypeError: Cannot read properties of undefined (reading 'is_equipment')\n    at USER.fb_quick (/home/mud/mud/world/cmd/action/cr.js:115:22)\n    at Timeout._onTimeout (/home/mud/mud/os/base.js:116:13)\n    at listOnTimeout (node:internal/timers:605:17)\n    at process.processTimers (node:internal/timers:541:7)"}
@@ -44,12 +43,13 @@
 [2026-08-22 03:54:56] [FATAL] 未捕获异常 | {"message":"lv is not defined","stack":"ReferenceError: lv is not defined\n    at BASE.on_damage (/home/mud/mud/world/skill/force/changshengjue.js:79:32)\n    at CHARACTER.damage (/home/mud/mud/world/extends/char/combat.js:418:31)\n    at CHARACTER.do_attack (/home/mud/mud/world/extends/char/combat.js:219:25)\n    at CHARACTER.auto_attack (/home/mud/mud/world/extends/char/auto_combat.js:49:23)\n    at listOnTimeout (node:internal/timers:605:17)\n    at process.processTimers (node:internal/timers:541:7)"}
 [2026-08-22 06:49:03] [FATAL] 未捕获异常 | {"message":"lv is not defined","stack":"ReferenceError: lv is not defined\n    at BASE.on_dodge_over (/home/mud/mud/world/skill/dodge/shaolinshenfa2.js:41:24)\n    at CHARACTER.do_attack (/home/mud/mud/world/extends/char/combat.js:347:39)\n    at CHARACTER.auto_attack (/home/mud/mud/world/extends/char/auto_combat.js:49:23)\n    at listOnTimeout (node:internal/timers:605:17)\n    at process.processTimers (node:internal/timers:541:7)"}
 [2026-08-22 10:43:19] [FATAL] 未捕获异常 | {"message":"lv is not defined","stack":"ReferenceError: lv is not defined\n    at BASE.on_damage (/home/mud/mud/world/skill/force/changshengjue.js:79:32)\n    at CHARACTER.damage (/home/mud/mud/world/extends/char/combat.js:418:31)\n    at CHARACTER.do_attack (/home/mud/mud/world/extends/char/combat.js:219:25)\n    at CHARACTER.auto_attack (/home/mud/mud/world/extends/char/auto_combat.js:49:23)\n    at listOnTimeout (node:internal/timers:605:17)\n    at process.processTimers (node:internal/timers:541:7)"}
+[2026-08-22 11:53:24] [FATAL] 未捕获异常 | {"message":"lv is not defined","stack":"ReferenceError: lv is not defined\n    at BASE.on_dodge_over (/home/mud/mud/world/skill/dodge/shaolinshenfa2.js:41:24)\n    at CHARACTER.do_attack (/home/mud/mud/world/extends/char/combat.js:347:39)\n    at CHARACTER.auto_attack (/home/mud/mud/world/extends/char/auto_combat.js:49:23)\n    at listOnTimeout (node:internal/timers:605:17)\n    at process.processTimers (node:internal/timers:541:7)"}
 ```
 
 ## 最近部署（deploy.log 末尾 20 行）
 
 ```
-[2026-08-22 11:45:08] 前端构建完成 da466dd（www/ 已更新）
+[2026-08-22 11:50:06] 前端构建完成 da466dd（www/ 已更新）
 
 > msmud@0.0.1 build
 > vite build
@@ -67,6 +67,6 @@ www/assets/glyphicons-halflings-regular-DrwTMapi.ttf    45.40 kB
 www/assets/index-S8NWkZZ9.css                           21.02 kB │ gzip:   4.93 kB
 www/assets/index-C1Nv-MwH.js                           355.21 kB │ gzip: 100.10 kB
 
-✓ built in 407ms
-[2026-08-22 11:50:06] 前端构建完成 da466dd（www/ 已更新）
+✓ built in 443ms
+[2026-08-22 11:55:07] 前端构建完成 da466dd（www/ 已更新）
 ```
