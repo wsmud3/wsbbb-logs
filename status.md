@@ -1,25 +1,25 @@
 # 服务器运行状态
 
-**心跳**: 2026-08-23 17:02:02 UTC / 北京时间 2026-08-24 01:02:02
+**心跳**: 2026-08-23 17:07:02 UTC / 北京时间 2026-08-24 01:07:02
 
 ## 游戏服
 
 | 服务器 | 状态 | 在线 | 连接 | 运行时长 |
 | --- | --- | --- | --- | --- |
-| 本地测试(100) | running | 1 | 0 | 0d 5h 24m |
-| 正式服(200) | running | 0 | 0 | 0d 6h 41m |
+| 本地测试(100) | running | 1 | 0 | 0d 5h 29m |
+| 正式服(200) | running | 0 | 0 | 0d 6h 46m |
 
 ## Web 服务
 
-- status: ok | 运行 0d 6h 41m | rss 98MB
+- status: ok | 运行 0d 6h 46m | rss 98MB
 
 ## pm2 进程
 
 | 进程 | 状态 | restarts | 内存 | 运行时长 |
 | --- | --- | --- | --- | --- |
-| mud-game-test | online | 3760 | 96MB | 0d 5h 24m |
-| mud-game | online | 3688 | 92MB | 0d 6h 41m |
-| mud-web | online | 3598 | 98MB | 0d 6h 41m |
+| mud-game-test | online | 3760 | 96MB | 0d 5h 29m |
+| mud-game | online | 3688 | 92MB | 0d 6h 46m |
+| mud-web | online | 3598 | 98MB | 0d 6h 46m |
 
 ## 系统
 
@@ -40,7 +40,7 @@
 ## 最近部署（deploy.log 末尾 20 行）
 
 ```
-[2026-08-23 16:55:07] 前端构建完成 4015058（www/ 已更新）
+[2026-08-23 17:00:09] 前端构建完成 4015058（www/ 已更新）
 
 > msmud@0.0.1 build
 > vite build
@@ -58,6 +58,6 @@ www/assets/glyphicons-halflings-regular-DrwTMapi.ttf    45.40 kB
 www/assets/index-CBFwBfKv.css                           21.25 kB │ gzip:   4.96 kB
 www/assets/index-WuC3f3_8.js                           355.83 kB │ gzip: 100.36 kB
 
-✓ built in 389ms
-[2026-08-23 17:00:09] 前端构建完成 4015058（www/ 已更新）
+✓ built in 388ms
+[2026-08-23 17:05:07] 前端构建完成 4015058（www/ 已更新）
 ```
