@@ -1,6 +1,6 @@
 # 服务器运行状态
 
-**心跳**: 2026-08-23 09:27:01 UTC / 北京时间 2026-08-23 17:27:01
+**心跳**: 2026-08-23 09:32:02 UTC / 北京时间 2026-08-23 17:32:02
 
 ## 游戏服
 
@@ -17,13 +17,13 @@
 
 | 进程 | 状态 | restarts | 内存 | 运行时长 |
 | --- | --- | --- | --- | --- |
-| mud-game-test | online | 3751 | 85MB | 0d 0h 1m |
-| mud-game | online | 3680 | 84MB | 0d 0h 1m |
-| mud-web | online | 3590 | 87MB | 0d 0h 1m |
+| mud-game-test | online | 3752 | 88MB | 0d 0h 1m |
+| mud-game | online | 3681 | 85MB | 0d 0h 1m |
+| mud-web | online | 3591 | 87MB | 0d 0h 1m |
 
 ## 系统
 
-- 内存: 413MB / 3911MB
+- 内存: 416MB / 3911MB
 - 磁盘: 13% 已用（85G 可用）
 - 端口监听: 31300✔ 31301✔ 8088✔
 
@@ -51,7 +51,7 @@ www/assets/glyphicons-halflings-regular-DrwTMapi.ttf    45.40 kB
 www/assets/index-CBFwBfKv.css                           21.25 kB │ gzip:   4.96 kB
 www/assets/index-WuC3f3_8.js                           355.83 kB │ gzip: 100.36 kB
 
-✓ built in 380ms
-[2026-08-23 09:25:07] 前端构建完成 3d7f668（www/ 已更新）
-[2026-08-23 09:25:20] 更新至 3d7f668（快进合并），健康检查通过，已 pm2 reload
+✓ built in 401ms
+[2026-08-23 09:30:07] 前端构建完成 1045485（www/ 已更新）
+[2026-08-23 09:30:19] 更新至 1045485（快进合并），健康检查通过，已 pm2 reload
 ```
