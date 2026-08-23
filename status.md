@@ -1,29 +1,29 @@
 # 服务器运行状态
 
-**心跳**: 2026-08-23 09:47:02 UTC / 北京时间 2026-08-23 17:47:02
+**心跳**: 2026-08-23 09:52:02 UTC / 北京时间 2026-08-23 17:52:02
 
 ## 游戏服
 
 | 服务器 | 状态 | 在线 | 连接 | 运行时长 |
 | --- | --- | --- | --- | --- |
 | 本地测试(100) | running | 0 | 0 | 0d 0h 1m |
-| 正式服(200) | running | 0 | 0 | 0d 0h 1m |
+| 正式服(200) | running | 1 | 1 | 0d 0h 1m |
 
 ## Web 服务
 
-- status: ok | 运行 0d 0h 1m | rss 87MB
+- status: ok | 运行 0d 0h 1m | rss 88MB
 
 ## pm2 进程
 
 | 进程 | 状态 | restarts | 内存 | 运行时长 |
 | --- | --- | --- | --- | --- |
-| mud-game-test | online | 3754 | 86MB | 0d 0h 1m |
-| mud-game | online | 3683 | 85MB | 0d 0h 1m |
-| mud-web | online | 3593 | 88MB | 0d 0h 1m |
+| mud-game-test | online | 3755 | 86MB | 0d 0h 1m |
+| mud-game | online | 3684 | 87MB | 0d 0h 1m |
+| mud-web | online | 3594 | 88MB | 0d 0h 1m |
 
 ## 系统
 
-- 内存: 404MB / 3911MB
+- 内存: 419MB / 3911MB
 - 磁盘: 13% 已用（85G 可用）
 - 端口监听: 31300✔ 31301✔ 8088✔
 
@@ -51,7 +51,7 @@ www/assets/glyphicons-halflings-regular-DrwTMapi.ttf    45.40 kB
 www/assets/index-CBFwBfKv.css                           21.25 kB │ gzip:   4.96 kB
 www/assets/index-WuC3f3_8.js                           355.83 kB │ gzip: 100.36 kB
 
-✓ built in 372ms
-[2026-08-23 09:45:07] 前端构建完成 dfebcad（www/ 已更新）
-[2026-08-23 09:45:19] 更新至 dfebcad（快进合并），健康检查通过，已 pm2 reload
+✓ built in 387ms
+[2026-08-23 09:50:08] 前端构建完成 fc540cd（www/ 已更新）
+[2026-08-23 09:50:20] 更新至 fc540cd（快进合并），健康检查通过，已 pm2 reload
 ```
