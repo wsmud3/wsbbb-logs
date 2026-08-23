@@ -1,6 +1,6 @@
 # 服务器运行状态
 
-**心跳**: 2026-08-23 09:42:01 UTC / 北京时间 2026-08-23 17:42:01
+**心跳**: 2026-08-23 09:47:02 UTC / 北京时间 2026-08-23 17:47:02
 
 ## 游戏服
 
@@ -11,19 +11,19 @@
 
 ## Web 服务
 
-- status: ok | 运行 0d 0h 1m | rss 91MB
+- status: ok | 运行 0d 0h 1m | rss 87MB
 
 ## pm2 进程
 
 | 进程 | 状态 | restarts | 内存 | 运行时长 |
 | --- | --- | --- | --- | --- |
-| mud-game-test | online | 3753 | 84MB | 0d 0h 1m |
-| mud-game | online | 3682 | 86MB | 0d 0h 1m |
-| mud-web | online | 3592 | 91MB | 0d 0h 1m |
+| mud-game-test | online | 3754 | 86MB | 0d 0h 1m |
+| mud-game | online | 3683 | 85MB | 0d 0h 1m |
+| mud-web | online | 3593 | 88MB | 0d 0h 1m |
 
 ## 系统
 
-- 内存: 412MB / 3911MB
+- 内存: 404MB / 3911MB
 - 磁盘: 13% 已用（85G 可用）
 - 端口监听: 31300✔ 31301✔ 8088✔
 
@@ -51,7 +51,7 @@ www/assets/glyphicons-halflings-regular-DrwTMapi.ttf    45.40 kB
 www/assets/index-CBFwBfKv.css                           21.25 kB │ gzip:   4.96 kB
 www/assets/index-WuC3f3_8.js                           355.83 kB │ gzip: 100.36 kB
 
-✓ built in 453ms
-[2026-08-23 09:40:07] 前端构建完成 6bde8b0（www/ 已更新）
-[2026-08-23 09:40:20] 更新至 6bde8b0（快进合并），健康检查通过，已 pm2 reload
+✓ built in 372ms
+[2026-08-23 09:45:07] 前端构建完成 dfebcad（www/ 已更新）
+[2026-08-23 09:45:19] 更新至 dfebcad（快进合并），健康检查通过，已 pm2 reload
 ```
