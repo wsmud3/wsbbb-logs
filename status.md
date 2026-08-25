@@ -1,29 +1,29 @@
 # 服务器运行状态
 
-**心跳**: 2026-08-25 12:42:01 UTC / 北京时间 2026-08-25 20:42:01
+**心跳**: 2026-08-25 12:47:02 UTC / 北京时间 2026-08-25 20:47:02
 
 ## 游戏服
 
 | 服务器 | 状态 | 在线 | 连接 | 运行时长 |
 | --- | --- | --- | --- | --- |
-| 本地测试(100) | running | 1 | 0 | 0d 0h 21m |
-| 正式服(200) | running | 0 | 0 | 0d 0h 21m |
+| 本地测试(100) | running | 1 | 0 | 0d 0h 26m |
+| 正式服(200) | running | 0 | 0 | 0d 0h 26m |
 
 ## Web 服务
 
-- status: ok | 运行 0d 0h 21m | rss 91MB
+- status: ok | 运行 0d 0h 26m | rss 91MB
 
 ## pm2 进程
 
 | 进程 | 状态 | restarts | 内存 | 运行时长 |
 | --- | --- | --- | --- | --- |
-| mud-game-test | online | 3770 | 88MB | 0d 0h 21m |
-| mud-game | online | 3694 | 89MB | 0d 0h 21m |
-| mud-web | online | 3604 | 91MB | 0d 0h 21m |
+| mud-game-test | online | 3770 | 88MB | 0d 0h 26m |
+| mud-game | online | 3694 | 89MB | 0d 0h 26m |
+| mud-web | online | 3604 | 91MB | 0d 0h 26m |
 
 ## 系统
 
-- 内存: 401MB / 3911MB
+- 内存: 406MB / 3911MB
 - 磁盘: 13% 已用（85G 可用）
 - 端口监听: 31300✔ 31301✔ 8088✔
 
@@ -34,7 +34,6 @@
 ## 最近部署（deploy.log 末尾 20 行）
 
 ```
-
 [31m[PARSE_ERROR] [0mUnterminated string
      [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m src/dialog/message.js:154:18 [38;5;246m][0m
      [38;5;246m│[0m
@@ -43,6 +42,7 @@
  [38;5;240m    │[0m                      ╰──── 
 [38;5;246m─────╯[0m
 
+...
     at aggregateBindingErrorsIntoJsError (file:///home/mud/mud/node_modules/rolldown/dist/shared/error-B8po7KiL.mjs:48:18)
     at unwrapBindingResult (file:///home/mud/mud/node_modules/rolldown/dist/shared/error-B8po7KiL.mjs:18:128)
     at #build (file:///home/mud/mud/node_modules/rolldown/dist/shared/rolldown-build-9MccaWPU.mjs:3236:34)
@@ -52,6 +52,6 @@
     at async CAC.<anonymous> (file:///home/mud/mud/node_modules/vite/dist/node/cli.js:777:3) {
   errors: [Getter/Setter]
 }
-[2026-08-25 12:40:08] 错误：前端构建失败 37ed8fa，前端保持旧版本，下轮自动重试
-[2026-08-25 12:40:08] 中止：前端构建失败，暂不 reload，等待下一轮重试
+[2026-08-25 12:45:09] 错误：前端构建失败 63a3ccd，前端保持旧版本，下轮自动重试
+[2026-08-25 12:45:09] 中止：前端构建失败，暂不 reload，等待下一轮重试
 ```
