@@ -1,29 +1,29 @@
 # 服务器运行状态
 
-**心跳**: 2026-08-25 12:32:01 UTC / 北京时间 2026-08-25 20:32:01
+**心跳**: 2026-08-25 12:37:02 UTC / 北京时间 2026-08-25 20:37:02
 
 ## 游戏服
 
 | 服务器 | 状态 | 在线 | 连接 | 运行时长 |
 | --- | --- | --- | --- | --- |
-| 本地测试(100) | running | 1 | 0 | 0d 0h 11m |
-| 正式服(200) | running | 0 | 0 | 0d 0h 11m |
+| 本地测试(100) | running | 1 | 0 | 0d 0h 16m |
+| 正式服(200) | running | 0 | 0 | 0d 0h 16m |
 
 ## Web 服务
 
-- status: ok | 运行 0d 0h 11m | rss 89MB
+- status: ok | 运行 0d 0h 16m | rss 89MB
 
 ## pm2 进程
 
 | 进程 | 状态 | restarts | 内存 | 运行时长 |
 | --- | --- | --- | --- | --- |
-| mud-game-test | online | 3770 | 88MB | 0d 0h 11m |
-| mud-game | online | 3694 | 88MB | 0d 0h 11m |
-| mud-web | online | 3604 | 89MB | 0d 0h 11m |
+| mud-game-test | online | 3770 | 88MB | 0d 0h 16m |
+| mud-game | online | 3694 | 89MB | 0d 0h 16m |
+| mud-web | online | 3604 | 89MB | 0d 0h 16m |
 
 ## 系统
 
-- 内存: 407MB / 3911MB
+- 内存: 391MB / 3911MB
 - 磁盘: 13% 已用（85G 可用）
 - 端口监听: 31300✔ 31301✔ 8088✔
 
@@ -35,23 +35,23 @@
 
 ```
 
-✓ built in 422ms
-[2026-08-25 12:25:09] 前端构建完成 3aa76b6（www/ 已更新）
+[31m[PARSE_ERROR] [0mUnterminated string
+     [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m src/dialog/message.js:154:18 [38;5;246m][0m
+     [38;5;246m│[0m
+ [38;5;246m154 │[0m [38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249ms[0m[38;5;249mt[0m[38;5;249mr[0m[38;5;249m.[0m[38;5;249mp[0m[38;5;249mu[0m[38;5;249ms[0m[38;5;249mh[0m[38;5;249m([0m"骞?);
+ [38;5;240m    │[0m                  ────┬──  
+ [38;5;240m    │[0m                      ╰──── 
+[38;5;246m─────╯[0m
 
-> msmud@0.0.1 build
-> vite build
-
-vite v8.0.14 building client environment for production...
-[2Ktransforming...✓ 59 modules transformed.
-rendering chunks...
-computing gzip size...
-www/index.html                                           0.42 kB │ gzip:   0.29 kB
-www/assets/glyphicons-halflings-regular-BUJKDMgK.eot    20.12 kB
-www/assets/glyphicons-halflings-regular-BKjkU69z.woff   23.42 kB
-www/assets/glyphicons-halflings-regular-DrwTMapi.ttf    45.40 kB
-www/assets/index-xwkqL7qP.css                           21.16 kB │ gzip:   4.94 kB
-www/assets/index-CR1bjm_l.js                           356.54 kB │ gzip: 100.48 kB
-
-✓ built in 390ms
-[2026-08-25 12:30:09] 前端构建完成 3aa76b6（www/ 已更新）
+    at aggregateBindingErrorsIntoJsError (file:///home/mud/mud/node_modules/rolldown/dist/shared/error-B8po7KiL.mjs:48:18)
+    at unwrapBindingResult (file:///home/mud/mud/node_modules/rolldown/dist/shared/error-B8po7KiL.mjs:18:128)
+    at #build (file:///home/mud/mud/node_modules/rolldown/dist/shared/rolldown-build-9MccaWPU.mjs:3236:34)
+    at async buildEnvironment (file:///home/mud/mud/node_modules/vite/dist/node/chunks/node.js:33137:64)
+    at async Object.build (file:///home/mud/mud/node_modules/vite/dist/node/chunks/node.js:33559:19)
+    at async Object.buildApp (file:///home/mud/mud/node_modules/vite/dist/node/chunks/node.js:33556:153)
+    at async CAC.<anonymous> (file:///home/mud/mud/node_modules/vite/dist/node/cli.js:777:3) {
+  errors: [Getter/Setter]
+}
+[2026-08-25 12:35:09] 错误：前端构建失败 385693c，前端保持旧版本，下轮自动重试
+[2026-08-25 12:35:09] 中止：前端构建失败，暂不 reload，等待下一轮重试
 ```
