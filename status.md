@@ -1,6 +1,6 @@
 # 服务器运行状态
 
-**心跳**: 2026-08-25 11:57:01 UTC / 北京时间 2026-08-25 19:57:01
+**心跳**: 2026-08-25 12:02:01 UTC / 北京时间 2026-08-25 20:02:01
 
 ## 游戏服
 
@@ -11,19 +11,19 @@
 
 ## Web 服务
 
-- status: ok | 运行 0d 0h 1m | rss 88MB
+- status: ok | 运行 0d 0h 1m | rss 91MB
 
 ## pm2 进程
 
 | 进程 | 状态 | restarts | 内存 | 运行时长 |
 | --- | --- | --- | --- | --- |
-| mud-game-test | online | 3766 | 86MB | 0d 0h 1m |
-| mud-game | online | 3690 | 87MB | 0d 0h 1m |
-| mud-web | online | 3600 | 88MB | 0d 0h 1m |
+| mud-game-test | online | 3767 | 85MB | 0d 0h 1m |
+| mud-game | online | 3691 | 84MB | 0d 0h 1m |
+| mud-web | online | 3601 | 91MB | 0d 0h 1m |
 
 ## 系统
 
-- 内存: 418MB / 3911MB
+- 内存: 427MB / 3911MB
 - 磁盘: 13% 已用（85G 可用）
 - 端口监听: 31300✔ 31301✔ 8088✔
 
@@ -49,9 +49,9 @@ www/assets/glyphicons-halflings-regular-BUJKDMgK.eot    20.12 kB
 www/assets/glyphicons-halflings-regular-BKjkU69z.woff   23.42 kB
 www/assets/glyphicons-halflings-regular-DrwTMapi.ttf    45.40 kB
 www/assets/index-CBFwBfKv.css                           21.25 kB │ gzip:   4.96 kB
-www/assets/index-D1SiBgWt.js                           355.90 kB │ gzip: 100.37 kB
+www/assets/index-Bh8fbX8t.js                           355.98 kB │ gzip: 100.40 kB
 
-✓ built in 371ms
-[2026-08-25 11:55:07] 前端构建完成 4049bfe（www/ 已更新）
-[2026-08-25 11:55:20] 更新至 4049bfe（快进合并），健康检查通过，已 pm2 reload
+✓ built in 383ms
+[2026-08-25 12:00:08] 前端构建完成 05ee9c7（www/ 已更新）
+[2026-08-25 12:00:21] 更新至 05ee9c7（快进合并），健康检查通过，已 pm2 reload
 ```
