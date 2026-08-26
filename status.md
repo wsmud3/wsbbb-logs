@@ -1,35 +1,41 @@
 # 服务器运行状态
 
-**心跳**: 2026-08-26 13:12:02 UTC / 北京时间 2026-08-26 21:12:02
+**心跳**: 2026-08-26 13:17:01 UTC / 北京时间 2026-08-26 21:17:01
 
 ## 游戏服
 
 | 服务器 | 状态 | 在线 | 连接 | 运行时长 |
 | --- | --- | --- | --- | --- |
-| 本地测试(100) | running | 4 | 1 | 1d 0h 51m |
-| 正式服(200) | running | 1 | 0 | 1d 0h 51m |
+| 本地测试(100) | running | 1 | 1 | 0d 0h 3m |
+| 正式服(200) | running | 1 | 0 | 1d 0h 56m |
 
 ## Web 服务
 
-- status: ok | 运行 1d 0h 51m | rss 100MB
+- status: ok | 运行 1d 0h 56m | rss 100MB
 
 ## pm2 进程
 
 | 进程 | 状态 | restarts | 内存 | 运行时长 |
 | --- | --- | --- | --- | --- |
-| mud-game-test | online | 3770 | 97MB | 1d 0h 51m |
-| mud-game | online | 3694 | 99MB | 1d 0h 51m |
-| mud-web | online | 3604 | 100MB | 1d 0h 51m |
+| mud-game-test | online | 3771 | 89MB | 0d 0h 3m |
+| mud-game | online | 3694 | 99MB | 1d 0h 56m |
+| mud-web | online | 3604 | 100MB | 1d 0h 56m |
 
 ## 系统
 
-- 内存: 426MB / 3911MB
+- 内存: 449MB / 3911MB
 - 磁盘: 13% 已用（85G 可用）
 - 端口监听: 31300✔ 31301✔ 8088✔
 
 ## 今日日志（UTC 2026-08-26）
 
-- warn: 0 | error: 0 | fatal: 0
+- warn: 0 | error: 0 | fatal: 1
+
+### 今日 fatal（最近 10 条）
+
+```
+[2026-08-26 13:13:35] [FATAL] 未捕获异常 | {"message":"lv is not defined","stack":"ReferenceError: lv is not defined\n    at BASE.on_damage (/home/mud/mud/world/skill/force/changshengjue.js:79:32)\n    at CHARACTER.damage (/home/mud/mud/world/extends/char/combat.js:424:31)\n    at CHARACTER.do_attack (/home/mud/mud/world/extends/char/combat.js:225:25)\n    at CHARACTER.auto_attack (/home/mud/mud/world/extends/char/auto_combat.js:49:23)\n    at listOnTimeout (node:internal/timers:605:17)\n    at process.processTimers (node:internal/timers:541:7)"}
+```
 
 ## 最近部署（deploy.log 末尾 20 行）
 
@@ -53,5 +59,5 @@
     at async CAC.<anonymous> (file:///home/mud/mud/node_modules/vite/dist/node/cli.js:777:3) {
   errors: [Getter/Setter]
 }
-[2026-08-26 13:10:09] 错误：前端构建失败 767c885，前端保持旧版本，下轮自动重试
+[2026-08-26 13:15:07] 错误：前端构建失败 767c885，前端保持旧版本，下轮自动重试
 ```
