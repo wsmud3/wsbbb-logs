@@ -1,25 +1,25 @@
 # 服务器运行状态
 
-**心跳**: 2026-08-26 04:37:02 UTC / 北京时间 2026-08-26 12:37:02
+**心跳**: 2026-08-26 04:42:02 UTC / 北京时间 2026-08-26 12:42:02
 
 ## 游戏服
 
 | 服务器 | 状态 | 在线 | 连接 | 运行时长 |
 | --- | --- | --- | --- | --- |
-| 本地测试(100) | running | 3 | 0 | 0d 16h 16m |
-| 正式服(200) | running | 1 | 0 | 0d 16h 16m |
+| 本地测试(100) | running | 3 | 0 | 0d 16h 21m |
+| 正式服(200) | running | 1 | 0 | 0d 16h 21m |
 
 ## Web 服务
 
-- status: ok | 运行 0d 16h 16m | rss 100MB
+- status: ok | 运行 0d 16h 21m | rss 100MB
 
 ## pm2 进程
 
 | 进程 | 状态 | restarts | 内存 | 运行时长 |
 | --- | --- | --- | --- | --- |
-| mud-game-test | online | 3770 | 99MB | 0d 16h 16m |
-| mud-game | online | 3694 | 97MB | 0d 16h 16m |
-| mud-web | online | 3604 | 100MB | 0d 16h 16m |
+| mud-game-test | online | 3770 | 99MB | 0d 16h 21m |
+| mud-game | online | 3694 | 97MB | 0d 16h 21m |
+| mud-web | online | 3604 | 100MB | 0d 16h 21m |
 
 ## 系统
 
@@ -53,5 +53,5 @@
     at async CAC.<anonymous> (file:///home/mud/mud/node_modules/vite/dist/node/cli.js:777:3) {
   errors: [Getter/Setter]
 }
-[2026-08-26 04:35:09] 错误：前端构建失败 767c885，前端保持旧版本，下轮自动重试
+[2026-08-26 04:40:20] 错误：前端构建失败 767c885，前端保持旧版本，下轮自动重试
 ```
