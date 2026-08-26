@@ -1,29 +1,29 @@
 # 服务器运行状态
 
-**心跳**: 2026-08-26 14:17:02 UTC / 北京时间 2026-08-26 22:17:02
+**心跳**: 2026-08-26 14:22:02 UTC / 北京时间 2026-08-26 22:22:02
 
 ## 游戏服
 
 | 服务器 | 状态 | 在线 | 连接 | 运行时长 |
 | --- | --- | --- | --- | --- |
-| 本地测试(100) | running | 2 | 0 | 0d 1h 3m |
-| 正式服(200) | running | 1 | 0 | 1d 1h 56m |
+| 本地测试(100) | running | 1 | 0 | 0d 1h 8m |
+| 正式服(200) | running | 1 | 0 | 1d 2h 1m |
 
 ## Web 服务
 
-- status: ok | 运行 1d 1h 56m | rss 100MB
+- status: ok | 运行 1d 2h 1m | rss 100MB
 
 ## pm2 进程
 
 | 进程 | 状态 | restarts | 内存 | 运行时长 |
 | --- | --- | --- | --- | --- |
-| mud-game-test | online | 3771 | 93MB | 0d 1h 3m |
-| mud-game | online | 3694 | 99MB | 1d 1h 56m |
-| mud-web | online | 3604 | 100MB | 1d 1h 56m |
+| mud-game-test | online | 3771 | 93MB | 0d 1h 8m |
+| mud-game | online | 3694 | 99MB | 1d 2h 1m |
+| mud-web | online | 3604 | 100MB | 1d 2h 1m |
 
 ## 系统
 
-- 内存: 421MB / 3911MB
+- 内存: 448MB / 3911MB
 - 磁盘: 13% 已用（85G 可用）
 - 端口监听: 31300✔ 31301✔ 8088✔
 
@@ -59,5 +59,5 @@
     at async CAC.<anonymous> (file:///home/mud/mud/node_modules/vite/dist/node/cli.js:777:3) {
   errors: [Getter/Setter]
 }
-[2026-08-26 14:15:07] 错误：前端构建失败 767c885，前端保持旧版本，下轮自动重试
+[2026-08-26 14:20:07] 错误：前端构建失败 767c885，前端保持旧版本，下轮自动重试
 ```
