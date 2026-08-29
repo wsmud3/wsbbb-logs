@@ -1,29 +1,29 @@
 # 服务器运行状态
 
-**心跳**: 2026-08-29 10:42:01 UTC / 北京时间 2026-08-29 18:42:01
+**心跳**: 2026-08-29 10:47:01 UTC / 北京时间 2026-08-29 18:47:01
 
 ## 游戏服
 
 | 服务器 | 状态 | 在线 | 连接 | 运行时长 |
 | --- | --- | --- | --- | --- |
-| 本地测试(100) | running | 1 | 1 | 0d 0h 6m |
-| 正式服(200) | running | 0 | 0 | 0d 0h 6m |
+| 本地测试(100) | running | 1 | 1 | 0d 0h 11m |
+| 正式服(200) | running | 0 | 0 | 0d 0h 11m |
 
 ## Web 服务
 
-- status: ok | 运行 0d 0h 6m | rss 89MB
+- status: ok | 运行 0d 0h 11m | rss 89MB
 
 ## pm2 进程
 
 | 进程 | 状态 | restarts | 内存 | 运行时长 |
 | --- | --- | --- | --- | --- |
-| mud-game-test | online | 3772 | 89MB | 0d 0h 6m |
-| mud-game | online | 3695 | 88MB | 0d 0h 6m |
-| mud-web | online | 3605 | 89MB | 0d 0h 6m |
+| mud-game-test | online | 3772 | 89MB | 0d 0h 11m |
+| mud-game | online | 3695 | 88MB | 0d 0h 11m |
+| mud-web | online | 3605 | 90MB | 0d 0h 11m |
 
 ## 系统
 
-- 内存: 602MB / 3911MB
+- 内存: 598MB / 3911MB
 - 磁盘: 13% 已用（85G 可用）
 - 端口监听: 31300✔ 31301✔ 8088✔
 
@@ -34,7 +34,6 @@
 ## 最近部署（deploy.log 末尾 20 行）
 
 ```
-    at async Object.buildApp (file:///home/mud/mud/node_modules/vite/dist/node/chunks/node.js:33556:153)
     at async CAC.<anonymous> (file:///home/mud/mud/node_modules/vite/dist/node/cli.js:777:3) {
   errors: [Getter/Setter]
 }
@@ -54,4 +53,5 @@
 [2026-08-29 10:35:06] 前端产物校验通过 f3580a9（使用仓库内版本，跳过服务器构建）
 [2026-08-29 10:35:18] 更新至 f3580a9（快进合并），健康检查通过，已 pm2 reload
 [2026-08-29 10:40:07] 前端产物校验通过 f3580a9（使用仓库内版本，跳过服务器构建）
+[2026-08-29 10:45:08] 前端产物校验通过 f3580a9（使用仓库内版本，跳过服务器构建）
 ```
