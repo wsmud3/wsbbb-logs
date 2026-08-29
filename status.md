@@ -1,41 +1,42 @@
 # 服务器运行状态
 
-**心跳**: 2026-08-29 17:02:02 UTC / 北京时间 2026-08-30 01:02:02
+**心跳**: 2026-08-29 17:07:02 UTC / 北京时间 2026-08-30 01:07:02
 
 ## 游戏服
 
 | 服务器 | 状态 | 在线 | 连接 | 运行时长 |
 | --- | --- | --- | --- | --- |
-| 本地测试(100) | running | 3 | 1 | 0d 0h 28m |
-| 正式服(200) | running | 1 | 1 | 0d 0h 56m |
+| 本地测试(100) | running | 3 | 1 | 0d 0h 33m |
+| 正式服(200) | running | 1 | 1 | 0d 1h 1m |
 
 ## Web 服务
 
-- status: ok | 运行 0d 0h 56m | rss 94MB
+- status: ok | 运行 0d 1h 1m | rss 94MB
 
 ## pm2 进程
 
 | 进程 | 状态 | restarts | 内存 | 运行时长 |
 | --- | --- | --- | --- | --- |
-| mud-game-test | online | 3779 | 96MB | 0d 0h 28m |
-| mud-game | online | 3701 | 94MB | 0d 0h 56m |
-| mud-web | online | 3611 | 94MB | 0d 0h 56m |
+| mud-game-test | online | 3779 | 96MB | 0d 0h 33m |
+| mud-game | online | 3701 | 94MB | 0d 1h 1m |
+| mud-web | online | 3611 | 94MB | 0d 1h 1m |
 
 ## 系统
 
-- 内存: 453MB / 3911MB
+- 内存: 448MB / 3911MB
 - 磁盘: 13% 已用（85G 可用）
 - 端口监听: 31300✔ 31301✔ 8088✔
 
 ## 今日日志（UTC 2026-08-29）
 
-- warn: 0 | error: 2 | fatal: 1
+- warn: 0 | error: 3 | fatal: 1
 
 ### 今日 error（最近 10 条）
 
 ```
 [2026-08-29 13:15:14] [ERROR] 未处理的Promise拒绝 | {"reason":"TypeError: Cannot read properties of undefined (reading 'length')"}
 [2026-08-29 14:15:19] [ERROR] 未处理的Promise拒绝 | {"reason":"TypeError: Cannot read properties of undefined (reading 'length')"}
+[2026-08-29 17:05:15] [ERROR] 未处理的Promise拒绝 | {"reason":"TypeError: Converting circular structure to JSON\n    --> starting at object with constructor 'Timeout'\n    |     property '_idlePrev' -> object with constructor 'TimersList'\n    --- property '_idleNext' closes the circle"}
 ```
 
 ### 今日 fatal（最近 10 条）
@@ -47,7 +48,6 @@
 ## 最近部署（deploy.log 末尾 20 行）
 
 ```
-[2026-08-29 15:40:07] 前端产物校验通过 38a37c3（使用仓库内版本，跳过服务器构建）
 [2026-08-29 15:45:06] 前端产物校验通过 38a37c3（使用仓库内版本，跳过服务器构建）
 [2026-08-29 15:50:06] 前端产物校验通过 38a37c3（使用仓库内版本，跳过服务器构建）
 [2026-08-29 15:55:07] 前端产物校验通过 de62c97（使用仓库内版本，跳过服务器构建）
@@ -67,4 +67,5 @@
 [2026-08-29 16:50:07] 前端产物校验通过 0480c2e（使用仓库内版本，跳过服务器构建）
 [2026-08-29 16:55:07] 前端产物校验通过 0480c2e（使用仓库内版本，跳过服务器构建）
 [2026-08-29 17:00:07] 前端产物校验通过 0480c2e（使用仓库内版本，跳过服务器构建）
+[2026-08-29 17:05:05] 前端产物校验通过 0480c2e（使用仓库内版本，跳过服务器构建）
 ```
