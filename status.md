@@ -1,29 +1,29 @@
 # 服务器运行状态
 
-**心跳**: 2026-08-29 10:22:01 UTC / 北京时间 2026-08-29 18:22:01
+**心跳**: 2026-08-29 10:27:02 UTC / 北京时间 2026-08-29 18:27:02
 
 ## 游戏服
 
 | 服务器 | 状态 | 在线 | 连接 | 运行时长 |
 | --- | --- | --- | --- | --- |
-| 本地测试(100) | running | 2 | 1 | 2d 21h 8m |
-| 正式服(200) | running | 0 | 0 | 3d 22h 1m |
+| 本地测试(100) | running | 2 | 1 | 2d 21h 13m |
+| 正式服(200) | running | 0 | 0 | 3d 22h 6m |
 
 ## Web 服务
 
-- status: ok | 运行 3d 22h 1m | rss 98MB
+- status: ok | 运行 3d 22h 6m | rss 98MB
 
 ## pm2 进程
 
 | 进程 | 状态 | restarts | 内存 | 运行时长 |
 | --- | --- | --- | --- | --- |
-| mud-game-test | online | 3771 | 101MB | 2d 21h 8m |
-| mud-game | online | 3694 | 91MB | 3d 22h 1m |
-| mud-web | online | 3604 | 98MB | 3d 22h 1m |
+| mud-game-test | online | 3771 | 101MB | 2d 21h 13m |
+| mud-game | online | 3694 | 91MB | 3d 22h 6m |
+| mud-web | online | 3604 | 98MB | 3d 22h 6m |
 
 ## 系统
 
-- 内存: 629MB / 3911MB
+- 内存: 630MB / 3911MB
 - 磁盘: 13% 已用（85G 可用）
 - 端口监听: 31300✔ 31301✔ 8088✔
 
@@ -34,7 +34,6 @@
 ## 最近部署（deploy.log 末尾 20 行）
 
 ```
-    at aggregateBindingErrorsIntoJsError (file:///home/mud/mud/node_modules/rolldown/dist/shared/error-B8po7KiL.mjs:48:18)
     at unwrapBindingResult (file:///home/mud/mud/node_modules/rolldown/dist/shared/error-B8po7KiL.mjs:18:128)
     at #build (file:///home/mud/mud/node_modules/rolldown/dist/shared/rolldown-build-9MccaWPU.mjs:3236:34)
     at async buildEnvironment (file:///home/mud/mud/node_modules/vite/dist/node/chunks/node.js:33137:64)
@@ -54,4 +53,5 @@
 [2026-08-29 10:10:07] 前端产物校验通过 f32380f（使用仓库内版本，跳过服务器构建）
 [2026-08-29 10:15:07] 前端产物校验通过 f32380f（使用仓库内版本，跳过服务器构建）
 [2026-08-29 10:20:07] 前端产物校验通过 f32380f（使用仓库内版本，跳过服务器构建）
+[2026-08-29 10:25:07] 前端产物校验通过 f32380f（使用仓库内版本，跳过服务器构建）
 ```
