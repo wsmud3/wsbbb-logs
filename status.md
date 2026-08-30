@@ -1,40 +1,45 @@
 # 服务器运行状态
 
-**心跳**: 2026-08-30 00:27:02 UTC / 北京时间 2026-08-30 08:27:02
+**心跳**: 2026-08-30 00:32:02 UTC / 北京时间 2026-08-30 08:32:02
 
 ## 游戏服
 
 | 服务器 | 状态 | 在线 | 连接 | 运行时长 |
 | --- | --- | --- | --- | --- |
-| 本地测试(100) | running | 3 | 1 | 0d 2h 41m |
-| 正式服(200) | running | 1 | 0 | 0d 2h 41m |
+| 本地测试(100) | 查询失败(rc=7) | - | - | - |
+| 正式服(200) | running | 1 | 0 | 0d 2h 46m |
 
 ## Web 服务
 
-- status: ok | 运行 0d 2h 41m | rss 104MB
+- status: ok | 运行 0d 2h 46m | rss 104MB
 
 ## pm2 进程
 
 | 进程 | 状态 | restarts | 内存 | 运行时长 |
 | --- | --- | --- | --- | --- |
-| mud-game-test | online | 3781 | 112MB | 0d 2h 41m |
-| mud-game | online | 3703 | 92MB | 0d 2h 41m |
-| mud-web | online | 3613 | 104MB | 0d 2h 41m |
+| mud-game-test | waiting restart | 3781 | 0MB | 0d 2h 46m |
+| mud-game | online | 3703 | 92MB | 0d 2h 46m |
+| mud-web | online | 3613 | 104MB | 0d 2h 46m |
 
 ## 系统
 
-- 内存: 465MB / 3911MB
+- 内存: 433MB / 3911MB
 - 磁盘: 13% 已用（85G 可用）
-- 端口监听: 31300✔ 31301✔ 8088✔
+- 端口监听: 31300✘ 31301✔ 8088✔
 
 ## 今日日志（UTC 2026-08-30）
 
-- warn: 0 | error: 0 | fatal: 0
+- warn: 0 | error: 0 | fatal: 1
+
+### 今日 fatal（最近 10 条）
+
+```
+[2026-08-30 00:32:00] [FATAL] 未捕获异常 | {"message":"lv is not defined","stack":"ReferenceError: lv is not defined\n    at BASE.on_damage (/home/mud/mud/world/skill/force/changshengjue.js:79:32)\n    at CHARACTER.damage (/home/mud/mud/world/extends/char/combat.js:456:31)\n    at CHARACTER.do_attack (/home/mud/mud/world/extends/char/combat.js:240:25)\n    at CHARACTER.auto_attack (/home/mud/mud/world/extends/char/auto_combat.js:49:23)\n    at listOnTimeout (node:internal/timers:605:17)\n    at process.processTimers (node:internal/timers:541:7)"}
+```
 
 ## 最近部署（deploy.log 末尾 20 行）
 
 ```
-[2026-08-29 22:50:05] 前端产物校验通过 71f6d0b（使用仓库内版本，跳过服务器构建）
 [2026-08-29 22:55:05] 前端产物校验通过 71f6d0b（使用仓库内版本，跳过服务器构建）
 [2026-08-29 23:00:05] 前端产物校验通过 71f6d0b（使用仓库内版本，跳过服务器构建）
 [2026-08-29 23:05:05] 前端产物校验通过 71f6d0b（使用仓库内版本，跳过服务器构建）
@@ -54,4 +59,5 @@
 [2026-08-30 00:15:06] 前端产物校验通过 71f6d0b（使用仓库内版本，跳过服务器构建）
 [2026-08-30 00:20:05] 前端产物校验通过 71f6d0b（使用仓库内版本，跳过服务器构建）
 [2026-08-30 00:25:05] 前端产物校验通过 71f6d0b（使用仓库内版本，跳过服务器构建）
+[2026-08-30 00:30:05] 前端产物校验通过 71f6d0b（使用仓库内版本，跳过服务器构建）
 ```
