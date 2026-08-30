@@ -1,47 +1,47 @@
 # 服务器运行状态
 
-**心跳**: 2026-08-30 16:17:02 UTC / 北京时间 2026-08-31 00:17:02
+**心跳**: 2026-08-30 16:22:01 UTC / 北京时间 2026-08-31 00:22:01
 
 ## 游戏服
 
 | 服务器 | 状态 | 在线 | 连接 | 运行时长 |
 | --- | --- | --- | --- | --- |
-| 本地测试(100) | running | 5 | 1 | 0d 13h 7m |
-| 正式服(200) | running | 1 | 0 | 0d 14h 56m |
+| 本地测试(100) | running | 1 | 1 | 0d 0h 0m |
+| 正式服(200) | running | 1 | 0 | 0d 15h 1m |
 
 ## Web 服务
 
-- status: ok | 运行 0d 14h 56m | rss 101MB
+- status: ok | 运行 0d 15h 1m | rss 101MB
 
 ## pm2 进程
 
 | 进程 | 状态 | restarts | 内存 | 运行时长 |
 | --- | --- | --- | --- | --- |
-| mud-game-test | online | 3784 | 108MB | 0d 13h 7m |
-| mud-game | online | 3704 | 96MB | 0d 14h 56m |
-| mud-web | online | 3614 | 101MB | 0d 14h 56m |
+| mud-game-test | online | 3785 | 119MB | 0d 0h 0m |
+| mud-game | online | 3704 | 96MB | 0d 15h 1m |
+| mud-web | online | 3614 | 101MB | 0d 15h 1m |
 
 ## 系统
 
-- 内存: 481MB / 3911MB
+- 内存: 461MB / 3911MB
 - 磁盘: 13% 已用（85G 可用）
 - 端口监听: 31300✔ 31301✔ 8088✔
 
 ## 今日日志（UTC 2026-08-30）
 
-- warn: 0 | error: 0 | fatal: 2
+- warn: 0 | error: 0 | fatal: 3
 
 ### 今日 fatal（最近 10 条）
 
 ```
 [2026-08-30 00:32:00] [FATAL] 未捕获异常 | {"message":"lv is not defined","stack":"ReferenceError: lv is not defined\n    at BASE.on_damage (/home/mud/mud/world/skill/force/changshengjue.js:79:32)\n    at CHARACTER.damage (/home/mud/mud/world/extends/char/combat.js:456:31)\n    at CHARACTER.do_attack (/home/mud/mud/world/extends/char/combat.js:240:25)\n    at CHARACTER.auto_attack (/home/mud/mud/world/extends/char/auto_combat.js:49:23)\n    at listOnTimeout (node:internal/timers:605:17)\n    at process.processTimers (node:internal/timers:541:7)"}
 [2026-08-30 03:09:55] [FATAL] 未捕获异常 | {"message":"lv is not defined","stack":"ReferenceError: lv is not defined\n    at BASE.on_damage (/home/mud/mud/world/skill/force/changshengjue.js:79:32)\n    at CHARACTER.damage (/home/mud/mud/world/extends/char/combat.js:456:31)\n    at CHARACTER.do_attack (/home/mud/mud/world/extends/char/combat.js:240:25)\n    at CHARACTER.auto_attack (/home/mud/mud/world/extends/char/auto_combat.js:49:23)\n    at listOnTimeout (node:internal/timers:605:17)\n    at process.processTimers (node:internal/timers:541:7)"}
+[2026-08-30 16:21:27] [FATAL] 未捕获异常 | {"message":"lv is not defined","stack":"ReferenceError: lv is not defined\n    at BASE.on_damage (/home/mud/mud/world/skill/force/changshengjue.js:79:32)\n    at CHARACTER.damage (/home/mud/mud/world/extends/char/combat.js:456:31)\n    at CHARACTER.do_attack (/home/mud/mud/world/extends/char/combat.js:370:33)\n    at PERFORM.use (/home/mud/mud/world/skill/unarmed/rulaishenzhang.js:80:7)\n    at CHARACTER.use_pfm (/home/mud/mud/world/extends/char/auto_combat.js:85:25)\n    at CHARACTER.check_pfms (/home/mud/mud/world/extends/char/auto_combat.js:175:14)\n    at CHARACTER.auto_attack (/home/mud/mud/world/extends/char/auto_combat.js:44:25)\n    at listOnTimeout (node:internal/timers:605:17)\n    at process.processTimers (node:internal/timers:541:7)"}
 ```
 
 ## 最近部署（deploy.log 末尾 20 行）
 
 ```
-[2026-08-30 14:40:05] 前端产物校验通过 122624d（使用仓库内版本，跳过服务器构建）
 [2026-08-30 14:45:07] 前端产物校验通过 122624d（使用仓库内版本，跳过服务器构建）
 [2026-08-30 14:50:09] 前端产物校验通过 122624d（使用仓库内版本，跳过服务器构建）
 [2026-08-30 14:55:07] 前端产物校验通过 122624d（使用仓库内版本，跳过服务器构建）
@@ -61,4 +61,5 @@
 [2026-08-30 16:05:06] 前端产物校验通过 122624d（使用仓库内版本，跳过服务器构建）
 [2026-08-30 16:10:06] 前端产物校验通过 122624d（使用仓库内版本，跳过服务器构建）
 [2026-08-30 16:15:07] 前端产物校验通过 122624d（使用仓库内版本，跳过服务器构建）
+[2026-08-30 16:20:06] 前端产物校验通过 122624d（使用仓库内版本，跳过服务器构建）
 ```
