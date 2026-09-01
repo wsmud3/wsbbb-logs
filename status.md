@@ -1,40 +1,45 @@
 # 服务器运行状态
 
-**心跳**: 2026-09-01 06:12:01 UTC / 北京时间 2026-09-01 14:12:01
+**心跳**: 2026-09-01 06:17:01 UTC / 北京时间 2026-09-01 14:17:01
 
 ## 游戏服
 
 | 服务器 | 状态 | 在线 | 连接 | 运行时长 |
 | --- | --- | --- | --- | --- |
-| 本地测试(100) | running | 1 | 0 | 0d 20h 41m |
-| 正式服(200) | running | 0 | 0 | 0d 20h 41m |
+| 本地测试(100) | running | 1 | 0 | 0d 0h 1m |
+| 正式服(200) | running | 0 | 0 | 0d 20h 46m |
 
 ## Web 服务
 
-- status: ok | 运行 0d 20h 41m | rss 100MB
+- status: ok | 运行 0d 20h 46m | rss 100MB
 
 ## pm2 进程
 
 | 进程 | 状态 | restarts | 内存 | 运行时长 |
 | --- | --- | --- | --- | --- |
-| mud-game-test | online | 3786 | 99MB | 0d 20h 41m |
-| mud-game | online | 3707 | 99MB | 0d 20h 41m |
-| mud-web | online | 3615 | 100MB | 0d 20h 41m |
+| mud-game-test | online | 3787 | 88MB | 0d 0h 1m |
+| mud-game | online | 3707 | 99MB | 0d 20h 46m |
+| mud-web | online | 3615 | 100MB | 0d 20h 46m |
 
 ## 系统
 
-- 内存: 541MB / 3911MB
+- 内存: 446MB / 3911MB
 - 磁盘: 13% 已用（85G 可用）
 - 端口监听: 31300✔ 31301✔ 8088✔
 
 ## 今日日志（UTC 2026-09-01）
 
-- warn: 0 | error: 0 | fatal: 0
+- warn: 0 | error: 0 | fatal: 1
+
+### 今日 fatal（最近 10 条）
+
+```
+[2026-09-01 06:15:07] [FATAL] 未捕获异常 | {"message":"Cannot read properties of undefined (reading 'is_equipment')","stack":"TypeError: Cannot read properties of undefined (reading 'is_equipment')\n    at USER.fb_quick (/home/mud/mud/world/cmd/action/cr.js:115:22)\n    at Timeout._onTimeout (/home/mud/mud/os/base.js:116:13)\n    at listOnTimeout (node:internal/timers:605:17)\n    at process.processTimers (node:internal/timers:541:7)"}
+```
 
 ## 最近部署（deploy.log 末尾 20 行）
 
 ```
-[2026-09-01 04:35:05] 前端产物校验通过 28626aa（使用仓库内版本，跳过服务器构建）
 [2026-09-01 04:40:06] 前端产物校验通过 28626aa（使用仓库内版本，跳过服务器构建）
 [2026-09-01 04:45:07] 前端产物校验通过 28626aa（使用仓库内版本，跳过服务器构建）
 [2026-09-01 04:50:07] 前端产物校验通过 28626aa（使用仓库内版本，跳过服务器构建）
@@ -54,4 +59,5 @@
 [2026-09-01 06:00:08] 前端产物校验通过 28626aa（使用仓库内版本，跳过服务器构建）
 [2026-09-01 06:05:07] 前端产物校验通过 28626aa（使用仓库内版本，跳过服务器构建）
 [2026-09-01 06:10:06] 前端产物校验通过 28626aa（使用仓库内版本，跳过服务器构建）
+[2026-09-01 06:15:09] 前端产物校验通过 28626aa（使用仓库内版本，跳过服务器构建）
 ```
