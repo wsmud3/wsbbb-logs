@@ -1,25 +1,25 @@
 # 服务器运行状态
 
-**心跳**: 2026-09-07 06:27:02 UTC / 北京时间 2026-09-07 14:27:02
+**心跳**: 2026-09-07 06:32:02 UTC / 北京时间 2026-09-07 14:32:02
 
 ## 游戏服
 
 | 服务器 | 状态 | 在线 | 连接 | 运行时长 |
 | --- | --- | --- | --- | --- |
-| 本地测试(100) | running | 0 | 0 | 5d 11h 25m |
-| 正式服(200) | running | 0 | 0 | 6d 20h 56m |
+| 本地测试(100) | running | 0 | 0 | 5d 11h 30m |
+| 正式服(200) | running | 0 | 0 | 6d 21h 1m |
 
 ## Web 服务
 
-- status: ok | 运行 6d 20h 56m | rss 105MB
+- status: ok | 运行 6d 21h 1m | rss 105MB
 
 ## pm2 进程
 
 | 进程 | 状态 | restarts | 内存 | 运行时长 |
 | --- | --- | --- | --- | --- |
-| mud-game-test | online | 3789 | 105MB | 5d 11h 25m |
-| mud-game | online | 3707 | 97MB | 6d 20h 56m |
-| mud-web | online | 3615 | 105MB | 6d 20h 56m |
+| mud-game-test | online | 3789 | 105MB | 5d 11h 30m |
+| mud-game | online | 3707 | 97MB | 6d 21h 1m |
+| mud-web | online | 3615 | 105MB | 6d 21h 1m |
 
 ## 系统
 
