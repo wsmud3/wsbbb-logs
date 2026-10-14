@@ -1,13 +1,13 @@
 # 服务器运行状态
 
-**心跳**: 2026-10-14 07:07:02 UTC / 北京时间 2026-10-14 15:07:02
+**心跳**: 2026-10-14 07:12:02 UTC / 北京时间 2026-10-14 15:12:02
 
 ## 游戏服
 
 | 服务器 | 状态 | 在线 | 连接 | 运行时长 |
 | --- | --- | --- | --- | --- |
-| 本地测试(100) | running | 1 | 1 | 0d 0h 16m |
-| 正式服(200) | running | 1 | 0 | 0d 0h 16m |
+| 本地测试(100) | running | 1 | 1 | 0d 0h 21m |
+| 正式服(200) | running | 1 | 0 | 0d 0h 21m |
 
 ## Web 服务
 
@@ -17,9 +17,9 @@
 
 | 进程 | 状态 | restarts | 内存 | 运行时长 |
 | --- | --- | --- | --- | --- |
-| mud-game | online | 3718 | 90MB | 0d 0h 16m |
-| mud-web | online | 3620 | 89MB | 0d 0h 16m |
-| mud-game-test | online | 38 | 92MB | 0d 0h 16m |
+| mud-game | online | 3718 | 90MB | 0d 0h 21m |
+| mud-web | online | 3620 | 90MB | 0d 0h 21m |
+| mud-game-test | online | 38 | 93MB | 0d 0h 21m |
 
 ## 系统
 
@@ -41,7 +41,6 @@
 ## 最近部署（deploy.log 末尾 20 行）
 
 ```
-[2026-10-14 05:45:01] 跳过：工作区不干净（存在未提交改动），拒绝自动部署
 [2026-10-14 05:50:01] 跳过：工作区不干净（存在未提交改动），拒绝自动部署
 [2026-10-14 05:55:01] 跳过：工作区不干净（存在未提交改动），拒绝自动部署
 [2026-10-14 06:00:01] Dirty checkout; deployment refused
@@ -61,4 +60,5 @@
 [2026-10-14 06:55:01] Dirty checkout; deployment refused
 [2026-10-14 07:00:01] Dirty checkout; deployment refused
 [2026-10-14 07:05:01] Dirty checkout; deployment refused
+[2026-10-14 07:10:01] Dirty checkout; deployment refused
 ```
