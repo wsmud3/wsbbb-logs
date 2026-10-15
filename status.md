@@ -1,13 +1,13 @@
 # 服务器运行状态
 
-**心跳**: 2026-10-15 07:17:02 UTC / 北京时间 2026-10-15 15:17:02
+**心跳**: 2026-10-15 07:22:02 UTC / 北京时间 2026-10-15 15:22:02
 
 ## 游戏服
 
 | 服务器 | 状态 | 在线 | 连接 | 运行时长 |
 | --- | --- | --- | --- | --- |
-| 本地测试(100) | running | 0 | 0 | 0d 0h 21m |
-| 正式服(200) | running | 0 | 0 | 0d 0h 21m |
+| 本地测试(100) | running | 0 | 0 | 0d 0h 26m |
+| 正式服(200) | running | 0 | 0 | 0d 0h 26m |
 
 ## Web 服务
 
@@ -17,13 +17,13 @@
 
 | 进程 | 状态 | restarts | 内存 | 运行时长 |
 | --- | --- | --- | --- | --- |
-| mud-game | online | 3790 | 90MB | 0d 0h 21m |
-| mud-web | online | 3675 | 87MB | 0d 0h 21m |
-| mud-game-test | online | 181 | 91MB | 0d 0h 21m |
+| mud-game | online | 3790 | 90MB | 0d 0h 26m |
+| mud-web | online | 3675 | 89MB | 0d 0h 26m |
+| mud-game-test | online | 181 | 91MB | 0d 0h 26m |
 
 ## 系统
 
-- 内存: 653MB / 3911MB
+- 内存: 645MB / 3911MB
 - 磁盘: 20% 已用（79G 可用）
 - 端口监听: 31300✔ 31301✔ 8088✔
 
@@ -46,10 +46,6 @@
 ## 最近部署（deploy.log 末尾 20 行）
 
 ```
-  （属主类问题可用 --fix 自动修复）
-[2026-10-15 06:10:01] Repo ownership/state precheck failed; see above lines. Run check_repo_ownership.js for detail
-
-  会阻塞自动部署的问题 2 项：
     1. 当前分支是 fix/net-ws-unauth-dos 而不是 main → 部署会 ff-only 合并失败或产生分叉
     2. 工作区有 1 处未提交改动 → deploy/pull.sh 会直接拒绝部署
 [2026-10-15 06:20:01] Repo ownership/state precheck failed; see above lines. Run check_repo_ownership.js for detail
@@ -66,4 +62,8 @@
 [2026-10-15 06:52:24] Dirty checkout; deployment refused
 [2026-10-15 06:53:00] Dirty checkout; deployment refused
 [2026-10-15 06:55:15] Verified release 83288ee800110da089604ddc268c443d7807bc8c on web and both game services
+
+  会阻塞自动部署的问题 1 项：
+    1. 工作区有 1 处未提交改动 → deploy/pull.sh 会直接拒绝部署
+[2026-10-15 07:20:01] Repo ownership/state precheck failed; see above lines. Run check_repo_ownership.js for detail
 ```
