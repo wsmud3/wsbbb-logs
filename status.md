@@ -1,13 +1,13 @@
 # 服务器运行状态
 
-**心跳**: 2026-10-15 07:32:02 UTC / 北京时间 2026-10-15 15:32:02
+**心跳**: 2026-10-15 07:37:02 UTC / 北京时间 2026-10-15 15:37:02
 
 ## 游戏服
 
 | 服务器 | 状态 | 在线 | 连接 | 运行时长 |
 | --- | --- | --- | --- | --- |
-| 本地测试(100) | running | 0 | 0 | 0d 0h 36m |
-| 正式服(200) | running | 0 | 0 | 0d 0h 36m |
+| 本地测试(100) | running | 0 | 0 | 0d 0h 41m |
+| 正式服(200) | running | 0 | 0 | 0d 0h 41m |
 
 ## Web 服务
 
@@ -17,13 +17,13 @@
 
 | 进程 | 状态 | restarts | 内存 | 运行时长 |
 | --- | --- | --- | --- | --- |
-| mud-game | online | 3790 | 91MB | 0d 0h 36m |
-| mud-web | online | 3681 | 97MB | 0d 0h 0m |
-| mud-game-test | online | 181 | 92MB | 0d 0h 36m |
+| mud-game | online | 3790 | 91MB | 0d 0h 41m |
+| mud-web | online | 3681 | 88MB | 0d 0h 5m |
+| mud-game-test | online | 181 | 92MB | 0d 0h 41m |
 
 ## 系统
 
-- 内存: 674MB / 3911MB
+- 内存: 664MB / 3911MB
 - 磁盘: 20% 已用（79G 可用）
 - 端口监听: 31300✔ 31301✔ 8088✔
 
@@ -46,7 +46,6 @@
 ## 最近部署（deploy.log 末尾 20 行）
 
 ```
-    1. 当前分支是 fix/loadresource-resilience 而不是 main → 部署会 ff-only 合并失败或产生分叉
 [2026-10-15 06:25:01] Repo ownership/state precheck failed; see above lines. Run check_repo_ownership.js for detail
 [2026-10-15 06:30:01] Dirty checkout; deployment refused
 [2026-10-15 06:34:33] Verified release 3fb6a9a1940098f349b72e1fd9b2f9d3fc7ad6ff on web and both game services
@@ -66,4 +65,5 @@
     1. 工作区有 1 处未提交改动 → deploy/pull.sh 会直接拒绝部署
 [2026-10-15 07:25:01] Repo ownership/state precheck failed; see above lines. Run check_repo_ownership.js for detail
 [2026-10-15 07:30:01] Dirty checkout; deployment refused
+[2026-10-15 07:35:01] Dirty checkout; deployment refused
 ```
