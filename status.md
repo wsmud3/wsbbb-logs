@@ -1,12 +1,12 @@
 # 服务器运行状态
 
-**心跳**: 2026-10-15 06:27:01 UTC / 北京时间 2026-10-15 14:27:01
+**心跳**: 2026-10-15 06:32:01 UTC / 北京时间 2026-10-15 14:32:01
 
 ## 游戏服
 
 | 服务器 | 状态 | 在线 | 连接 | 运行时长 |
 | --- | --- | --- | --- | --- |
-| 本地测试(100) | running | 0 | 0 | 0d 0h 0m |
+| 本地测试(100) | 查询失败(rc=7) | - | - | - |
 | 正式服(200) | running | 0 | 0 | 0d 0h 0m |
 
 ## Web 服务
@@ -17,15 +17,15 @@
 
 | 进程 | 状态 | restarts | 内存 | 运行时长 |
 | --- | --- | --- | --- | --- |
-| mud-game | online | 3783 | 112MB | 0d 0h 0m |
-| mud-web | online | 3670 | 96MB | 0d 0h 0m |
-| mud-game-test | online | 163 | 118MB | 0d 0h 0m |
+| mud-game | online | 3784 | 121MB | 0d 0h 0m |
+| mud-web | online | 3670 | 86MB | 0d 0h 5m |
+| mud-game-test | online | 164 | 63MB | 0d 0h 0m |
 
 ## 系统
 
-- 内存: 499MB / 3911MB
+- 内存: 461MB / 3911MB
 - 磁盘: 19% 已用（80G 可用）
-- 端口监听: 31300✔ 31301✔ 8088✔
+- 端口监听: 31300✘ 31301✔ 8088✔
 
 ## 今日日志（UTC 2026-10-15）
 
@@ -46,7 +46,6 @@
 ## 最近部署（deploy.log 末尾 20 行）
 
 ```
-[2026-10-15 06:09:56] Verified release 23e4882fb62c0960f6a99318047375e56700fff9 on web and both game services
 
   会阻塞自动部署的问题 1 项：
     1. 1 个已跟踪文件/目录的属主不是 mud → git 无法覆盖它们，部署会在"恰好要改到它们"时失败
@@ -66,4 +65,5 @@
   会阻塞自动部署的问题 1 项：
     1. 当前分支是 fix/loadresource-resilience 而不是 main → 部署会 ff-only 合并失败或产生分叉
 [2026-10-15 06:25:01] Repo ownership/state precheck failed; see above lines. Run check_repo_ownership.js for detail
+[2026-10-15 06:30:01] Dirty checkout; deployment refused
 ```
