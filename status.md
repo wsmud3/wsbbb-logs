@@ -1,13 +1,13 @@
 # 服务器运行状态
 
-**心跳**: 2026-10-15 07:37:02 UTC / 北京时间 2026-10-15 15:37:02
+**心跳**: 2026-10-15 07:42:02 UTC / 北京时间 2026-10-15 15:42:02
 
 ## 游戏服
 
 | 服务器 | 状态 | 在线 | 连接 | 运行时长 |
 | --- | --- | --- | --- | --- |
-| 本地测试(100) | running | 0 | 0 | 0d 0h 41m |
-| 正式服(200) | running | 0 | 0 | 0d 0h 41m |
+| 本地测试(100) | running | 0 | 0 | 0d 0h 46m |
+| 正式服(200) | running | 0 | 0 | 0d 0h 46m |
 
 ## Web 服务
 
@@ -17,14 +17,14 @@
 
 | 进程 | 状态 | restarts | 内存 | 运行时长 |
 | --- | --- | --- | --- | --- |
-| mud-game | online | 3790 | 91MB | 0d 0h 41m |
-| mud-web | online | 3681 | 88MB | 0d 0h 5m |
-| mud-game-test | online | 181 | 92MB | 0d 0h 41m |
+| mud-game | online | 3790 | 91MB | 0d 0h 46m |
+| mud-web | online | 3682 | 96MB | 0d 0h 0m |
+| mud-game-test | online | 181 | 92MB | 0d 0h 46m |
 
 ## 系统
 
-- 内存: 664MB / 3911MB
-- 磁盘: 20% 已用（79G 可用）
+- 内存: 691MB / 3911MB
+- 磁盘: 20% 已用（78G 可用）
 - 端口监听: 31300✔ 31301✔ 8088✔
 
 ## 今日日志（UTC 2026-10-15）
@@ -46,7 +46,6 @@
 ## 最近部署（deploy.log 末尾 20 行）
 
 ```
-[2026-10-15 06:25:01] Repo ownership/state precheck failed; see above lines. Run check_repo_ownership.js for detail
 [2026-10-15 06:30:01] Dirty checkout; deployment refused
 [2026-10-15 06:34:33] Verified release 3fb6a9a1940098f349b72e1fd9b2f9d3fc7ad6ff on web and both game services
 [2026-10-15 06:45:01] Dirty checkout; deployment refused
@@ -66,4 +65,5 @@
 [2026-10-15 07:25:01] Repo ownership/state precheck failed; see above lines. Run check_repo_ownership.js for detail
 [2026-10-15 07:30:01] Dirty checkout; deployment refused
 [2026-10-15 07:35:01] Dirty checkout; deployment refused
+[2026-10-15 07:40:01] Dirty checkout; deployment refused
 ```
