@@ -1,6 +1,6 @@
 # 服务器运行状态
 
-**心跳**: 2026-10-16 04:07:02 UTC / 北京时间 2026-10-16 12:07:02
+**心跳**: 2026-10-16 04:12:02 UTC / 北京时间 2026-10-16 12:12:02
 
 ## 游戏服
 
@@ -17,13 +17,13 @@
 
 | 进程 | 状态 | restarts | 内存 | 运行时长 |
 | --- | --- | --- | --- | --- |
-| mud-game | online | 3802 | 89MB | 0d 0h 1m |
-| mud-web | online | 3695 | 86MB | 0d 0h 1m |
-| mud-game-test | online | 206 | 121MB | 0d 0h 1m |
+| mud-game | online | 3805 | 90MB | 0d 0h 1m |
+| mud-web | online | 3698 | 86MB | 0d 0h 1m |
+| mud-game-test | online | 211 | 91MB | 0d 0h 1m |
 
 ## 系统
 
-- 内存: 741MB / 3911MB
+- 内存: 656MB / 3911MB
 - 磁盘: 20% 已用（78G 可用）
 - 端口监听: 31300✔ 31301✔ 8088✔
 
@@ -34,8 +34,6 @@
 ## 最近部署（deploy.log 末尾 20 行）
 
 ```
-[2026-10-15 07:40:01] Dirty checkout; deployment refused
-
   会阻塞自动部署的问题 1 项：
     1. 工作区有 1 处未提交改动 → deploy/pull.sh 会直接拒绝部署
 [2026-10-15 07:45:01] Repo ownership/state precheck failed; see above lines. Run check_repo_ownership.js for detail
@@ -54,4 +52,6 @@
 [2026-10-16 03:50:01] Dirty checkout; deployment refused
 [2026-10-16 03:55:01] Dirty checkout; deployment refused
 [2026-10-16 04:05:17] Verified release 8b7b90eb5f55f4f4481045adb02d2b3a302abac6 on web and both game services
+[2026-10-16 04:10:07] package-lock.json 未变化且依赖自检通过，跳过 npm ci
+[2026-10-16 04:10:11] Verified release 193c6d9bf81d20db5a94f7604f529a38dbe0138b on web and both game services
 ```
