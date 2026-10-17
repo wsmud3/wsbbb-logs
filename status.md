@@ -1,13 +1,13 @@
 # 服务器运行状态
 
-**心跳**: 2026-10-17 14:37:02 UTC / 北京时间 2026-10-17 22:37:02
+**心跳**: 2026-10-17 14:42:02 UTC / 北京时间 2026-10-17 22:42:02
 
 ## 游戏服
 
 | 服务器 | 状态 | 在线 | 连接 | 运行时长 |
 | --- | --- | --- | --- | --- |
-| 本地测试(100) | running | 0 | 0 | 1d 10h 26m |
-| 正式服(200) | running | 0 | 0 | 1d 10h 26m |
+| 本地测试(100) | running | 0 | 0 | 0d 0h 1m |
+| 正式服(200) | running | 0 | 0 | 0d 0h 1m |
 
 ## Web 服务
 
@@ -17,13 +17,13 @@
 
 | 进程 | 状态 | restarts | 内存 | 运行时长 |
 | --- | --- | --- | --- | --- |
-| mud-game | online | 3805 | 91MB | 1d 10h 26m |
-| mud-web | online | 3698 | 90MB | 1d 10h 26m |
-| mud-game-test | online | 211 | 94MB | 1d 10h 26m |
+| mud-game | online | 3806 | 91MB | 0d 0h 1m |
+| mud-web | online | 3699 | 87MB | 0d 0h 1m |
+| mud-game-test | online | 212 | 122MB | 0d 0h 1m |
 
 ## 系统
 
-- 内存: 768MB / 3911MB
+- 内存: 759MB / 3911MB
 - 磁盘: 21% 已用（78G 可用）
 - 端口监听: 31300✔ 31301✔ 8088✔
 
@@ -40,8 +40,6 @@
 ## 最近部署（deploy.log 末尾 20 行）
 
 ```
-  会阻塞自动部署的问题 1 项：
-    1. 工作区有 1 处未提交改动 → deploy/pull.sh 会直接拒绝部署
 [2026-10-15 07:45:01] Repo ownership/state precheck failed; see above lines. Run check_repo_ownership.js for detail
 [2026-10-15 07:50:01] Dirty checkout; deployment refused
 
@@ -60,4 +58,6 @@
 [2026-10-16 04:05:17] Verified release 8b7b90eb5f55f4f4481045adb02d2b3a302abac6 on web and both game services
 [2026-10-16 04:10:07] package-lock.json 未变化且依赖自检通过，跳过 npm ci
 [2026-10-16 04:10:11] Verified release 193c6d9bf81d20db5a94f7604f529a38dbe0138b on web and both game services
+[2026-10-17 14:40:07] package-lock.json 未变化且依赖自检通过，跳过 npm ci
+[2026-10-17 14:40:28] Deployment failed at line 60; keep player database and inspect services
 ```
