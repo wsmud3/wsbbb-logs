@@ -1,6 +1,6 @@
 # 服务器运行状态
 
-**心跳**: 2026-10-17 14:42:02 UTC / 北京时间 2026-10-17 22:42:02
+**心跳**: 2026-10-17 14:47:01 UTC / 北京时间 2026-10-17 22:47:01
 
 ## 游戏服
 
@@ -17,13 +17,13 @@
 
 | 进程 | 状态 | restarts | 内存 | 运行时长 |
 | --- | --- | --- | --- | --- |
-| mud-game | online | 3806 | 91MB | 0d 0h 1m |
-| mud-web | online | 3699 | 87MB | 0d 0h 1m |
-| mud-game-test | online | 212 | 122MB | 0d 0h 1m |
+| mud-game | online | 3807 | 91MB | 0d 0h 1m |
+| mud-web | online | 3700 | 88MB | 0d 0h 1m |
+| mud-game-test | online | 213 | 94MB | 0d 0h 1m |
 
 ## 系统
 
-- 内存: 759MB / 3911MB
+- 内存: 737MB / 3911MB
 - 磁盘: 21% 已用（78G 可用）
 - 端口监听: 31300✔ 31301✔ 8088✔
 
@@ -40,8 +40,6 @@
 ## 最近部署（deploy.log 末尾 20 行）
 
 ```
-[2026-10-15 07:45:01] Repo ownership/state precheck failed; see above lines. Run check_repo_ownership.js for detail
-[2026-10-15 07:50:01] Dirty checkout; deployment refused
 
   会阻塞自动部署的问题 1 项：
     1. 当前分支是 feat/chatlog-and-bot-commands 而不是 main → 部署会 ff-only 合并失败或产生分叉
@@ -60,4 +58,6 @@
 [2026-10-16 04:10:11] Verified release 193c6d9bf81d20db5a94f7604f529a38dbe0138b on web and both game services
 [2026-10-17 14:40:07] package-lock.json 未变化且依赖自检通过，跳过 npm ci
 [2026-10-17 14:40:28] Deployment failed at line 60; keep player database and inspect services
+[2026-10-17 14:45:07] package-lock.json 未变化且依赖自检通过，跳过 npm ci
+[2026-10-17 14:45:28] Deployment failed at line 60; keep player database and inspect services
 ```
