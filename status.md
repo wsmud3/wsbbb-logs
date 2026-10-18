@@ -1,6 +1,6 @@
 # 服务器运行状态
 
-**心跳**: 2026-10-18 06:17:02 UTC / 北京时间 2026-10-18 14:17:02
+**心跳**: 2026-10-18 06:22:02 UTC / 北京时间 2026-10-18 14:22:02
 
 ## 游戏服
 
@@ -17,13 +17,13 @@
 
 | 进程 | 状态 | restarts | 内存 | 运行时长 |
 | --- | --- | --- | --- | --- |
-| mud-game | online | 3993 | 91MB | 0d 0h 1m |
-| mud-web | online | 3886 | 88MB | 0d 0h 1m |
-| mud-game-test | online | 399 | 123MB | 0d 0h 1m |
+| mud-game | online | 3994 | 89MB | 0d 0h 1m |
+| mud-web | online | 3887 | 88MB | 0d 0h 1m |
+| mud-game-test | online | 400 | 122MB | 0d 0h 1m |
 
 ## 系统
 
-- 内存: 819MB / 3911MB
+- 内存: 814MB / 3911MB
 - 磁盘: 21% 已用（78G 可用）
 - 端口监听: 31300✔ 31301✔ 8088✔
 
@@ -34,8 +34,6 @@
 ## 最近部署（deploy.log 末尾 20 行）
 
 ```
-[2026-10-18 05:30:08] package-lock.json 未变化且依赖自检通过，跳过 npm ci
-[2026-10-18 05:30:28] Deployment failed at line 60; keep player database and inspect services
 [2026-10-18 05:35:08] package-lock.json 未变化且依赖自检通过，跳过 npm ci
 [2026-10-18 05:35:30] Deployment failed at line 60; keep player database and inspect services
 [2026-10-18 05:40:08] package-lock.json 未变化且依赖自检通过，跳过 npm ci
@@ -54,4 +52,6 @@
 [2026-10-18 06:10:34] Deployment failed at line 60; keep player database and inspect services
 [2026-10-18 06:15:08] package-lock.json 未变化且依赖自检通过，跳过 npm ci
 [2026-10-18 06:15:29] Deployment failed at line 60; keep player database and inspect services
+[2026-10-18 06:20:08] package-lock.json 未变化且依赖自检通过，跳过 npm ci
+[2026-10-18 06:20:29] Deployment failed at line 60; keep player database and inspect services
 ```
