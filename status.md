@@ -1,6 +1,6 @@
 # 服务器运行状态
 
-**心跳**: 2026-10-17 23:57:02 UTC / 北京时间 2026-10-18 07:57:02
+**心跳**: 2026-10-18 00:02:01 UTC / 北京时间 2026-10-18 08:02:01
 
 ## 游戏服
 
@@ -17,31 +17,23 @@
 
 | 进程 | 状态 | restarts | 内存 | 运行时长 |
 | --- | --- | --- | --- | --- |
-| mud-game | online | 3917 | 89MB | 0d 0h 1m |
-| mud-web | online | 3810 | 87MB | 0d 0h 1m |
-| mud-game-test | online | 323 | 127MB | 0d 0h 1m |
+| mud-game | online | 3918 | 90MB | 0d 0h 1m |
+| mud-web | online | 3811 | 88MB | 0d 0h 1m |
+| mud-game-test | online | 324 | 123MB | 0d 0h 1m |
 
 ## 系统
 
-- 内存: 800MB / 3911MB
+- 内存: 812MB / 3911MB
 - 磁盘: 21% 已用（78G 可用）
 - 端口监听: 31300✔ 31301✔ 8088✔
 
-## 今日日志（UTC 2026-10-17）
+## 今日日志（UTC 2026-10-18）
 
-- warn: 0 | error: 1 | fatal: 0
-
-### 今日 error（最近 10 条）
-
-```
-[2026-10-17 01:07:35] [ERROR] 未处理的Promise拒绝 | {"reason":"ReferenceError: pars is not defined"}
-```
+- warn: 0 | error: 0 | fatal: 0
 
 ## 最近部署（deploy.log 末尾 20 行）
 
 ```
-[2026-10-17 23:10:06] package-lock.json 未变化且依赖自检通过，跳过 npm ci
-[2026-10-17 23:10:27] Deployment failed at line 60; keep player database and inspect services
 [2026-10-17 23:15:06] package-lock.json 未变化且依赖自检通过，跳过 npm ci
 [2026-10-17 23:15:27] Deployment failed at line 60; keep player database and inspect services
 [2026-10-17 23:20:06] package-lock.json 未变化且依赖自检通过，跳过 npm ci
@@ -60,4 +52,6 @@
 [2026-10-17 23:50:27] Deployment failed at line 60; keep player database and inspect services
 [2026-10-17 23:55:06] package-lock.json 未变化且依赖自检通过，跳过 npm ci
 [2026-10-17 23:55:27] Deployment failed at line 60; keep player database and inspect services
+[2026-10-18 00:00:07] package-lock.json 未变化且依赖自检通过，跳过 npm ci
+[2026-10-18 00:00:29] Deployment failed at line 60; keep player database and inspect services
 ```
