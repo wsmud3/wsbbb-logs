@@ -1,13 +1,13 @@
 # 服务器运行状态
 
-**心跳**: 2026-10-21 07:47:01 UTC / 北京时间 2026-10-21 15:47:01
+**心跳**: 2026-10-21 07:52:02 UTC / 北京时间 2026-10-21 15:52:02
 
 ## 游戏服
 
 | 服务器 | 状态 | 在线 | 连接 | 运行时长 |
 | --- | --- | --- | --- | --- |
-| 本地测试(100) | running | 0 | 0 | 0d 0h 18m |
-| 正式服(200) | running | 0 | 0 | 2d 1h 39m |
+| 本地测试(100) | running | 0 | 0 | 0d 0h 0m |
+| 正式服(200) | running | 0 | 0 | 2d 1h 44m |
 
 ## Web 服务
 
@@ -17,9 +17,9 @@
 
 | 进程 | 状态 | restarts | 内存 | 运行时长 |
 | --- | --- | --- | --- | --- |
-| mud-game | online | 4224 | 100MB | 2d 1h 39m |
-| mud-web | online | 4117 | 99MB | 2d 1h 39m |
-| mud-game-test | online | 665 | 94MB | 0d 0h 18m |
+| mud-game | online | 4224 | 98MB | 2d 1h 44m |
+| mud-web | online | 4117 | 99MB | 2d 1h 44m |
+| mud-game-test | online | 666 | 120MB | 0d 0h 0m |
 
 ## 系统
 
@@ -38,11 +38,6 @@
   会阻塞自动部署的问题 1 项：
     1. 8 个已跟踪文件/目录的属主不是 mud → git 无法覆盖它们，部署会在"恰好要改到它们"时失败
   （属主类问题可用 --fix 自动修复）
-[2026-10-21 07:30:02] Repo ownership/state precheck failed; see above lines. Run check_repo_ownership.js for detail
-
-  会阻塞自动部署的问题 1 项：
-    1. 8 个已跟踪文件/目录的属主不是 mud → git 无法覆盖它们，部署会在"恰好要改到它们"时失败
-  （属主类问题可用 --fix 自动修复）
 [2026-10-21 07:35:01] Repo ownership/state precheck failed; see above lines. Run check_repo_ownership.js for detail
 
   会阻塞自动部署的问题 1 项：
@@ -54,4 +49,9 @@
     1. 8 个已跟踪文件/目录的属主不是 mud → git 无法覆盖它们，部署会在"恰好要改到它们"时失败
   （属主类问题可用 --fix 自动修复）
 [2026-10-21 07:45:02] Repo ownership/state precheck failed; see above lines. Run check_repo_ownership.js for detail
+
+  会阻塞自动部署的问题 1 项：
+    1. 8 个已跟踪文件/目录的属主不是 mud → git 无法覆盖它们，部署会在"恰好要改到它们"时失败
+  （属主类问题可用 --fix 自动修复）
+[2026-10-21 07:50:01] Repo ownership/state precheck failed; see above lines. Run check_repo_ownership.js for detail
 ```
