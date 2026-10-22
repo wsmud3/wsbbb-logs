@@ -1,12 +1,12 @@
 # 服务器运行状态
 
-**心跳**: 2026-10-22 03:42:02 UTC / 北京时间 2026-10-22 11:42:02
+**心跳**: 2026-10-22 03:47:01 UTC / 北京时间 2026-10-22 11:47:01
 
 ## 游戏服
 
 | 服务器 | 状态 | 在线 | 连接 | 运行时长 |
 | --- | --- | --- | --- | --- |
-| 本地测试(100) | running | 0 | 0 | 0d 0h 1m |
+| 本地测试(100) | running | 1 | 1 | 0d 0h 1m |
 | 正式服(200) | running | 0 | 0 | 0d 0h 1m |
 
 ## Web 服务
@@ -17,13 +17,13 @@
 
 | 进程 | 状态 | restarts | 内存 | 运行时长 |
 | --- | --- | --- | --- | --- |
-| mud-game | online | 4230 | 89MB | 0d 0h 1m |
-| mud-web | online | 4123 | 87MB | 0d 0h 1m |
-| mud-game-test | online | 687 | 120MB | 0d 0h 1m |
+| mud-game | online | 4231 | 91MB | 0d 0h 1m |
+| mud-web | online | 4124 | 89MB | 0d 0h 1m |
+| mud-game-test | online | 689 | 126MB | 0d 0h 1m |
 
 ## 系统
 
-- 内存: 904MB / 3911MB
+- 内存: 946MB / 3911MB
 - 磁盘: 21% 已用（77G 可用）
 - 端口监听: 31300✔ 31301✔ 8088✔
 
@@ -34,8 +34,6 @@
 ## 最近部署（deploy.log 末尾 20 行）
 
 ```
-  （属主类问题可用 --fix 自动修复）
-[2026-10-22 02:30:01] Repo ownership/state precheck failed; see above lines. Run check_repo_ownership.js for detail
 
   会阻塞自动部署的问题 2 项：
     1. 14 个已跟踪文件/目录的属主不是 mud → git 无法覆盖它们，部署会在"恰好要改到它们"时失败
@@ -54,4 +52,6 @@
 [2026-10-22 03:35:10] Verified release acce61705abc78fb25bdeceb5a1ef7ba8676a290 on web and both game services
 [2026-10-22 03:40:07] package-lock.json 未变化且依赖自检通过，跳过 npm ci
 [2026-10-22 03:40:10] Verified release 6c9cdcb5b5eaa95b3b8370bf3564e58639eb19d7 on web and both game services
+[2026-10-22 03:45:07] package-lock.json 未变化且依赖自检通过，跳过 npm ci
+[2026-10-22 03:45:11] Verified release 2d65019aea5807f9c9110838d325af0ad290bd89 on web and both game services
 ```
