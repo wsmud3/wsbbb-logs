@@ -1,13 +1,13 @@
 # 服务器运行状态
 
-**心跳**: 2026-10-22 08:07:01 UTC / 北京时间 2026-10-22 16:07:01
+**心跳**: 2026-10-22 08:12:02 UTC / 北京时间 2026-10-22 16:12:02
 
 ## 游戏服
 
 | 服务器 | 状态 | 在线 | 连接 | 运行时长 |
 | --- | --- | --- | --- | --- |
-| 本地测试(100) | running | 1 | 1 | 0d 0h 0m |
-| 正式服(200) | running | 0 | 0 | 0d 0h 6m |
+| 本地测试(100) | running | 0 | 0 | 0d 0h 1m |
+| 正式服(200) | running | 0 | 0 | 0d 0h 3m |
 
 ## Web 服务
 
@@ -17,24 +17,34 @@
 
 | 进程 | 状态 | restarts | 内存 | 运行时长 |
 | --- | --- | --- | --- | --- |
-| mud-game | online | 4255 | 92MB | 0d 0h 6m |
-| mud-web | online | 4148 | 88MB | 0d 0h 6m |
-| mud-game-test | online | 757 | 123MB | 0d 0h 0m |
+| mud-game | online | 4257 | 92MB | 0d 0h 3m |
+| mud-web | online | 4148 | 89MB | 0d 0h 11m |
+| mud-game-test | online | 761 | 124MB | 0d 0h 1m |
 
 ## 系统
 
-- 内存: 961MB / 3911MB
+- 内存: 930MB / 3911MB
 - 磁盘: 21% 已用（77G 可用）
 - 端口监听: 31300✔ 31301✔ 8088✔
 
 ## 今日日志（UTC 2026-10-22）
 
-- warn: 0 | error: 0 | fatal: 0
+- warn: 0 | error: 0 | fatal: 6
+
+### 今日 fatal（最近 10 条）
+
+```
+[2026-10-22 08:07:10] [FATAL] 未捕获异常 | {"message":"room.send_room is not a function","stack":"TypeError: room.send_room is not a function\n    at NPC.on_die (/home/mud/mud-test/world/npc/wf/wenfangda.js:64:14)\n    at NPC.die (/home/mud/mud-test/os/char/npc.js:127:29)\n    at CHARACTER.end_attack (/home/mud/mud-test/os/char/combat.js:193:41)\n    at CHARACTER.auto_attack (/home/mud/mud-test/world/extends/char/auto_combat.js:57:26)\n    at listOnTimeout (node:internal/timers:605:17)\n    at process.processTimers (node:internal/timers:541:7)"}
+[2026-10-22 08:07:11] [FATAL] 未捕获异常 | {"message":"room.send_room is not a function","stack":"TypeError: room.send_room is not a function\n    at NPC.on_die (/home/mud/mud-test/world/npc/wf/wenfangda.js:64:14)\n    at NPC.die (/home/mud/mud-test/os/char/npc.js:127:29)\n    at CHARACTER.end_attack (/home/mud/mud-test/os/char/combat.js:193:41)\n    at CHARACTER.auto_attack (/home/mud/mud-test/world/extends/char/auto_combat.js:11:27)\n    at listOnTimeout (node:internal/timers:605:17)\n    at process.processTimers (node:internal/timers:541:7)"}
+[2026-10-22 08:07:51] [FATAL] 未捕获异常 | {"message":"room.send_room is not a function","stack":"TypeError: room.send_room is not a function\n    at NPC.on_die (/home/mud/mud/world/npc/wf/wenfangda.js:64:14)\n    at NPC.die (/home/mud/mud/os/char/npc.js:127:29)\n    at CHARACTER.query_enemy (/home/mud/mud/os/char/combat.js:159:31)\n    at CHARACTER.auto_attack (/home/mud/mud/world/extends/char/auto_combat.js:8:23)\n    at listOnTimeout (node:internal/timers:605:17)\n    at process.processTimers (node:internal/timers:541:7)"}
+[2026-10-22 08:08:31] [FATAL] 未捕获异常 | {"message":"room.send_room is not a function","stack":"TypeError: room.send_room is not a function\n    at NPC.on_die (/home/mud/mud/world/npc/wf/wenfangda.js:64:14)\n    at NPC.die (/home/mud/mud/os/char/npc.js:127:29)\n    at CHARACTER.query_enemy (/home/mud/mud/os/char/combat.js:159:31)\n    at CHARACTER.auto_attack (/home/mud/mud/world/extends/char/auto_combat.js:8:23)\n    at listOnTimeout (node:internal/timers:605:17)\n    at process.processTimers (node:internal/timers:541:7)"}
+[2026-10-22 08:08:32] [FATAL] 未捕获异常 | {"message":"room.send_room is not a function","stack":"TypeError: room.send_room is not a function\n    at NPC.on_die (/home/mud/mud/world/npc/wf/wenfangda.js:64:14)\n    at NPC.die (/home/mud/mud/os/char/npc.js:127:29)\n    at CHARACTER.query_enemy (/home/mud/mud/os/char/combat.js:159:31)\n    at CHARACTER.auto_attack (/home/mud/mud/world/extends/char/auto_combat.js:8:23)\n    at listOnTimeout (node:internal/timers:605:17)\n    at process.processTimers (node:internal/timers:541:7)"}
+[2026-10-22 08:09:01] [FATAL] 未捕获异常 | {"message":"room.send_room is not a function","stack":"TypeError: room.send_room is not a function\n    at NPC.on_die (/home/mud/mud-test/world/npc/wf/wenfangda.js:64:14)\n    at NPC.die (/home/mud/mud-test/os/char/npc.js:127:29)\n    at CHARACTER.end_attack (/home/mud/mud-test/os/char/combat.js:193:41)\n    at CHARACTER.auto_attack (/home/mud/mud-test/world/extends/char/auto_combat.js:57:26)\n    at listOnTimeout (node:internal/timers:605:17)\n    at process.processTimers (node:internal/timers:541:7)"}
+```
 
 ## 最近部署（deploy.log 末尾 20 行）
 
 ```
-[2026-10-22 06:50:11] Verified release 5624b5e3c59d212b9b64e33c4a994b4b00825f03 on web and both game services
 [2026-10-22 07:00:07] package-lock.json 未变化且依赖自检通过，跳过 npm ci
 [2026-10-22 07:00:11] Verified release 2df9b4cfdcec172b352d186afa43627576c945c0 on web and both game services
 [2026-10-22 07:05:07] package-lock.json 未变化且依赖自检通过，跳过 npm ci
@@ -54,4 +64,5 @@
 [2026-10-22 08:00:07] package-lock.json 未变化且依赖自检通过，跳过 npm ci
 [2026-10-22 08:00:10] Verified release 769e4ec8dee8b8b2c0a67af20fab7cbd6a6507dc on web and both game services
 [2026-10-22 08:05:01] Dirty checkout; deployment refused
+[2026-10-22 08:10:02] Dirty checkout; deployment refused
 ```
