@@ -1,13 +1,13 @@
 # 服务器运行状态
 
-**心跳**: 2026-10-22 02:22:02 UTC / 北京时间 2026-10-22 10:22:02
+**心跳**: 2026-10-22 02:27:02 UTC / 北京时间 2026-10-22 10:27:02
 
 ## 游戏服
 
 | 服务器 | 状态 | 在线 | 连接 | 运行时长 |
 | --- | --- | --- | --- | --- |
-| 本地测试(100) | running | 0 | 0 | 0d 1h 42m |
-| 正式服(200) | running | 0 | 0 | 2d 20h 14m |
+| 本地测试(100) | running | 0 | 0 | 0d 1h 47m |
+| 正式服(200) | running | 0 | 0 | 2d 20h 19m |
 
 ## Web 服务
 
@@ -17,13 +17,13 @@
 
 | 进程 | 状态 | restarts | 内存 | 运行时长 |
 | --- | --- | --- | --- | --- |
-| mud-game | online | 4224 | 101MB | 2d 20h 14m |
-| mud-web | online | 4117 | 101MB | 2d 20h 14m |
-| mud-game-test | online | 674 | 99MB | 0d 1h 42m |
+| mud-game | online | 4224 | 101MB | 2d 20h 19m |
+| mud-web | online | 4117 | 101MB | 2d 20h 19m |
+| mud-game-test | online | 674 | 99MB | 0d 1h 47m |
 
 ## 系统
 
-- 内存: 968MB / 3911MB
+- 内存: 959MB / 3911MB
 - 磁盘: 21% 已用（77G 可用）
 - 端口监听: 31300✔ 31301✔ 8088✔
 
@@ -39,13 +39,6 @@
     2. 当前分支是 feat/kw-faithful-rebuild 而不是 main → 部署会 ff-only 合并失败或产生分叉
     3. 工作区有 1 处未提交改动 → deploy/pull.sh 会直接拒绝部署
   （属主类问题可用 --fix 自动修复）
-[2026-10-22 02:10:02] Repo ownership/state precheck failed; see above lines. Run check_repo_ownership.js for detail
-
-  会阻塞自动部署的问题 3 项：
-    1. 18 个已跟踪文件/目录的属主不是 mud → git 无法覆盖它们，部署会在"恰好要改到它们"时失败
-    2. 当前分支是 feat/kw-faithful-rebuild 而不是 main → 部署会 ff-only 合并失败或产生分叉
-    3. 工作区有 1 处未提交改动 → deploy/pull.sh 会直接拒绝部署
-  （属主类问题可用 --fix 自动修复）
 [2026-10-22 02:15:02] Repo ownership/state precheck failed; see above lines. Run check_repo_ownership.js for detail
 
   会阻塞自动部署的问题 3 项：
@@ -54,4 +47,11 @@
     3. 工作区有 1 处未提交改动 → deploy/pull.sh 会直接拒绝部署
   （属主类问题可用 --fix 自动修复）
 [2026-10-22 02:20:01] Repo ownership/state precheck failed; see above lines. Run check_repo_ownership.js for detail
+
+  会阻塞自动部署的问题 3 项：
+    1. 18 个已跟踪文件/目录的属主不是 mud → git 无法覆盖它们，部署会在"恰好要改到它们"时失败
+    2. 当前分支是 feat/kw-faithful-rebuild 而不是 main → 部署会 ff-only 合并失败或产生分叉
+    3. 工作区有 1 处未提交改动 → deploy/pull.sh 会直接拒绝部署
+  （属主类问题可用 --fix 自动修复）
+[2026-10-22 02:25:01] Repo ownership/state precheck failed; see above lines. Run check_repo_ownership.js for detail
 ```
