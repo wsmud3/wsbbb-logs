@@ -1,13 +1,13 @@
 # 服务器运行状态
 
-**心跳**: 2026-10-22 12:37:02 UTC / 北京时间 2026-10-22 20:37:02
+**心跳**: 2026-10-22 12:42:02 UTC / 北京时间 2026-10-22 20:42:02
 
 ## 游戏服
 
 | 服务器 | 状态 | 在线 | 连接 | 运行时长 |
 | --- | --- | --- | --- | --- |
-| 本地测试(100) | running | 0 | 0 | 0d 3h 16m |
-| 正式服(200) | running | 0 | 0 | 0d 4h 6m |
+| 本地测试(100) | running | 0 | 0 | 0d 3h 21m |
+| 正式服(200) | running | 0 | 0 | 0d 4h 11m |
 
 ## Web 服务
 
@@ -17,13 +17,13 @@
 
 | 进程 | 状态 | restarts | 内存 | 运行时长 |
 | --- | --- | --- | --- | --- |
-| mud-game | online | 4260 | 99MB | 0d 4h 6m |
-| mud-web | online | 4151 | 95MB | 0d 4h 6m |
-| mud-game-test | online | 789 | 102MB | 0d 3h 16m |
+| mud-game | online | 4260 | 99MB | 0d 4h 11m |
+| mud-web | online | 4151 | 95MB | 0d 4h 11m |
+| mud-game-test | online | 789 | 102MB | 0d 3h 21m |
 
 ## 系统
 
-- 内存: 941MB / 3911MB
+- 内存: 917MB / 3911MB
 - 磁盘: 21% 已用（77G 可用）
 - 端口监听: 31300✔ 31301✔ 8088✔
 
@@ -45,7 +45,6 @@
 ## 最近部署（deploy.log 末尾 20 行）
 
 ```
-[2026-10-22 11:00:01] Dirty checkout; deployment refused
 [2026-10-22 11:05:01] Dirty checkout; deployment refused
 [2026-10-22 11:10:01] Dirty checkout; deployment refused
 [2026-10-22 11:15:01] Dirty checkout; deployment refused
@@ -65,4 +64,5 @@
 [2026-10-22 12:25:01] Dirty checkout; deployment refused
 [2026-10-22 12:30:01] Dirty checkout; deployment refused
 [2026-10-22 12:35:01] Dirty checkout; deployment refused
+[2026-10-22 12:40:01] Dirty checkout; deployment refused
 ```
