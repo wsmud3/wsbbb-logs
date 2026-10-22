@@ -1,13 +1,13 @@
 # 服务器运行状态
 
-**心跳**: 2026-10-22 02:37:02 UTC / 北京时间 2026-10-22 10:37:02
+**心跳**: 2026-10-22 02:42:02 UTC / 北京时间 2026-10-22 10:42:02
 
 ## 游戏服
 
 | 服务器 | 状态 | 在线 | 连接 | 运行时长 |
 | --- | --- | --- | --- | --- |
-| 本地测试(100) | running | 0 | 0 | 0d 0h 4m |
-| 正式服(200) | running | 0 | 0 | 2d 20h 29m |
+| 本地测试(100) | running | 0 | 0 | 0d 0h 2m |
+| 正式服(200) | running | 0 | 0 | 2d 20h 34m |
 
 ## Web 服务
 
@@ -17,13 +17,13 @@
 
 | 进程 | 状态 | restarts | 内存 | 运行时长 |
 | --- | --- | --- | --- | --- |
-| mud-game | online | 4224 | 101MB | 2d 20h 29m |
-| mud-web | online | 4117 | 101MB | 2d 20h 29m |
-| mud-game-test | online | 675 | 94MB | 0d 0h 4m |
+| mud-game | online | 4224 | 101MB | 2d 20h 34m |
+| mud-web | online | 4117 | 101MB | 2d 20h 34m |
+| mud-game-test | online | 676 | 120MB | 0d 0h 2m |
 
 ## 系统
 
-- 内存: 929MB / 3911MB
+- 内存: 942MB / 3911MB
 - 磁盘: 21% 已用（77G 可用）
 - 端口监听: 31300✔ 31301✔ 8088✔
 
@@ -34,7 +34,6 @@
 ## 最近部署（deploy.log 末尾 20 行）
 
 ```
-
   会阻塞自动部署的问题 3 项：
     1. 18 个已跟踪文件/目录的属主不是 mud → git 无法覆盖它们，部署会在"恰好要改到它们"时失败
     2. 当前分支是 feat/kw-faithful-rebuild 而不是 main → 部署会 ff-only 合并失败或产生分叉
@@ -54,4 +53,5 @@
     2. 当前分支是 feat/kw-faithful-rebuild 而不是 main → 部署会 ff-only 合并失败或产生分叉
   （属主类问题可用 --fix 自动修复）
 [2026-10-22 02:35:01] Repo ownership/state precheck failed; see above lines. Run check_repo_ownership.js for detail
+[2026-10-22 02:40:01] Dirty checkout; deployment refused
 ```
