@@ -1,13 +1,13 @@
 # 服务器运行状态
 
-**心跳**: 2026-10-23 08:52:02 UTC / 北京时间 2026-10-23 16:52:02
+**心跳**: 2026-10-23 08:57:02 UTC / 北京时间 2026-10-23 16:57:02
 
 ## 游戏服
 
 | 服务器 | 状态 | 在线 | 连接 | 运行时长 |
 | --- | --- | --- | --- | --- |
-| 本地测试(100) | running | 1 | 1 | 0d 0h 21m |
-| 正式服(200) | running | 0 | 0 | 0d 0h 21m |
+| 本地测试(100) | running | 0 | 0 | 0d 0h 1m |
+| 正式服(200) | running | 0 | 0 | 0d 0h 1m |
 
 ## Web 服务
 
@@ -17,13 +17,13 @@
 
 | 进程 | 状态 | restarts | 内存 | 运行时长 |
 | --- | --- | --- | --- | --- |
-| mud-game | online | 4295 | 91MB | 0d 0h 21m |
-| mud-web | online | 4186 | 89MB | 0d 0h 21m |
-| mud-game-test | online | 935 | 98MB | 0d 0h 21m |
+| mud-game | online | 4296 | 91MB | 0d 0h 1m |
+| mud-web | online | 4187 | 87MB | 0d 0h 1m |
+| mud-game-test | online | 937 | 120MB | 0d 0h 1m |
 
 ## 系统
 
-- 内存: 921MB / 3911MB
+- 内存: 952MB / 3911MB
 - 磁盘: 21% 已用（77G 可用）
 - 端口监听: 31300✔ 31301✔ 8088✔
 
@@ -34,8 +34,6 @@
 ## 最近部署（deploy.log 末尾 20 行）
 
 ```
-    1. 当前分支是 feat/kw-faithful-rebuild 而不是 main → 部署会 ff-only 合并失败或产生分叉
-[2026-10-23 07:40:01] Repo ownership/state precheck failed; see above lines. Run check_repo_ownership.js for detail
 
   会阻塞自动部署的问题 1 项：
     1. 当前分支是 feat/kw-faithful-rebuild 而不是 main → 部署会 ff-only 合并失败或产生分叉
@@ -54,4 +52,6 @@
 [2026-10-23 08:25:12] Verified release f7f4e8895019cf1c438634481330ed6a905d22c3 on web and both game services
 [2026-10-23 08:30:08] package-lock.json 未变化且依赖自检通过，跳过 npm ci
 [2026-10-23 08:30:11] Verified release 59a9ee70346c0e497bc24955a24edf48aec4a929 on web and both game services
+[2026-10-23 08:55:07] package-lock.json 未变化且依赖自检通过，跳过 npm ci
+[2026-10-23 08:55:12] Verified release 340ce762879139b92ec51aa2e14055c1275f711e on web and both game services
 ```
