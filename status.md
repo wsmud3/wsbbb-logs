@@ -1,13 +1,13 @@
 # 服务器运行状态
 
-**心跳**: 2026-10-23 08:07:02 UTC / 北京时间 2026-10-23 16:07:02
+**心跳**: 2026-10-23 08:12:02 UTC / 北京时间 2026-10-23 16:12:02
 
 ## 游戏服
 
 | 服务器 | 状态 | 在线 | 连接 | 运行时长 |
 | --- | --- | --- | --- | --- |
-| 本地测试(100) | running | 0 | 0 | 0d 0h 11m |
-| 正式服(200) | running | 0 | 0 | 0d 0h 11m |
+| 本地测试(100) | running | 0 | 0 | 0d 0h 1m |
+| 正式服(200) | running | 0 | 0 | 0d 0h 1m |
 
 ## Web 服务
 
@@ -17,13 +17,13 @@
 
 | 进程 | 状态 | restarts | 内存 | 运行时长 |
 | --- | --- | --- | --- | --- |
-| mud-game | online | 4291 | 93MB | 0d 0h 11m |
-| mud-web | online | 4182 | 87MB | 0d 0h 11m |
-| mud-game-test | online | 927 | 93MB | 0d 0h 11m |
+| mud-game | online | 4292 | 91MB | 0d 0h 1m |
+| mud-web | online | 4183 | 87MB | 0d 0h 1m |
+| mud-game-test | online | 929 | 121MB | 0d 0h 1m |
 
 ## 系统
 
-- 内存: 922MB / 3911MB
+- 内存: 952MB / 3911MB
 - 磁盘: 21% 已用（77G 可用）
 - 端口监听: 31300✔ 31301✔ 8088✔
 
@@ -34,8 +34,6 @@
 ## 最近部署（deploy.log 末尾 20 行）
 
 ```
-[2026-10-23 07:30:07] package-lock.json 未变化且依赖自检通过，跳过 npm ci
-[2026-10-23 07:30:11] Verified release 85bb0e38d6e095bf82786a7dc69a4207713bebc2 on web and both game services
 
   会阻塞自动部署的问题 1 项：
     1. 当前分支是 feat/kw-faithful-rebuild 而不是 main → 部署会 ff-only 合并失败或产生分叉
@@ -54,4 +52,6 @@
 [2026-10-23 07:50:01] Repo ownership/state precheck failed; see above lines. Run check_repo_ownership.js for detail
 [2026-10-23 07:55:08] package-lock.json 未变化且依赖自检通过，跳过 npm ci
 [2026-10-23 07:55:11] Verified release 8357fc1e91c7ca20c725d5daf17a33874c749c92 on web and both game services
+[2026-10-23 08:10:08] package-lock.json 未变化且依赖自检通过，跳过 npm ci
+[2026-10-23 08:10:12] Verified release a18ab0a6de51198b3edb2ccba188eff0cd9903b6 on web and both game services
 ```
