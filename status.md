@@ -1,13 +1,13 @@
 # 服务器运行状态
 
-**心跳**: 2026-10-23 09:32:02 UTC / 北京时间 2026-10-23 17:32:02
+**心跳**: 2026-10-23 09:37:02 UTC / 北京时间 2026-10-23 17:37:02
 
 ## 游戏服
 
 | 服务器 | 状态 | 在线 | 连接 | 运行时长 |
 | --- | --- | --- | --- | --- |
 | 本地测试(100) | running | 0 | 0 | 0d 0h 1m |
-| 正式服(200) | running | 0 | 0 | 0d 0h 6m |
+| 正式服(200) | running | 0 | 0 | 0d 0h 1m |
 
 ## Web 服务
 
@@ -17,13 +17,13 @@
 
 | 进程 | 状态 | restarts | 内存 | 运行时长 |
 | --- | --- | --- | --- | --- |
-| mud-game | online | 4297 | 92MB | 0d 0h 6m |
-| mud-web | online | 4188 | 88MB | 0d 0h 6m |
-| mud-game-test | online | 940 | 91MB | 0d 0h 1m |
+| mud-game | online | 4298 | 92MB | 0d 0h 1m |
+| mud-web | online | 4189 | 87MB | 0d 0h 1m |
+| mud-game-test | online | 941 | 124MB | 0d 0h 1m |
 
 ## 系统
 
-- 内存: 912MB / 3911MB
+- 内存: 956MB / 3911MB
 - 磁盘: 21% 已用（77G 可用）
 - 端口监听: 31300✔ 31301✔ 8088✔
 
@@ -34,8 +34,6 @@
 ## 最近部署（deploy.log 末尾 20 行）
 
 ```
-    1. 当前分支是 push/batch2 而不是 main → 部署会 ff-only 合并失败或产生分叉
-[2026-10-23 07:50:01] Repo ownership/state precheck failed; see above lines. Run check_repo_ownership.js for detail
 [2026-10-23 07:55:08] package-lock.json 未变化且依赖自检通过，跳过 npm ci
 [2026-10-23 07:55:11] Verified release 8357fc1e91c7ca20c725d5daf17a33874c749c92 on web and both game services
 [2026-10-23 08:10:08] package-lock.json 未变化且依赖自检通过，跳过 npm ci
@@ -54,4 +52,6 @@
   会阻塞自动部署的问题 1 项：
     1. 当前分支是 push/batch6 而不是 main → 部署会 ff-only 合并失败或产生分叉
 [2026-10-23 09:30:01] Repo ownership/state precheck failed; see above lines. Run check_repo_ownership.js for detail
+[2026-10-23 09:35:08] package-lock.json 未变化且依赖自检通过，跳过 npm ci
+[2026-10-23 09:35:11] Verified release 9124a597d975ab1538c4bbeedfc9765529b45e9a on web and both game services
 ```
