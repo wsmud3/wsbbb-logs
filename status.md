@@ -1,13 +1,13 @@
 # 服务器运行状态
 
-**心跳**: 2026-11-03 06:27:02 UTC / 北京时间 2026-11-03 14:27:02
+**心跳**: 2026-11-03 06:32:02 UTC / 北京时间 2026-11-03 14:32:02
 
 ## 游戏服
 
 | 服务器 | 状态 | 在线 | 连接 | 运行时长 |
 | --- | --- | --- | --- | --- |
-| 本地测试(100) | running | 1 | 1 | 0d 0h 6m |
-| 正式服(200) | running | 1 | 0 | 1d 0h 11m |
+| 本地测试(100) | running | 1 | 1 | 0d 0h 2m |
+| 正式服(200) | running | 1 | 0 | 1d 0h 16m |
 
 ## Web 服务
 
@@ -17,25 +17,26 @@
 
 | 进程 | 状态 | restarts | 内存 | 运行时长 |
 | --- | --- | --- | --- | --- |
-| mud-game | online | 4300 | 96MB | 1d 0h 11m |
-| mud-web | online | 4191 | 92MB | 1d 0h 11m |
-| mud-game-test | online | 946 | 96MB | 0d 0h 6m |
+| mud-game | online | 4300 | 96MB | 1d 0h 16m |
+| mud-web | online | 4191 | 92MB | 1d 0h 16m |
+| mud-game-test | online | 947 | 125MB | 0d 0h 2m |
 
 ## 系统
 
-- 内存: 1018MB / 3911MB
+- 内存: 1047MB / 3911MB
 - 磁盘: 22% 已用（77G 可用）
 - 端口监听: 31300✔ 31301✔ 8088✔
 
 ## 今日日志（UTC 2026-11-03）
 
-- warn: 0 | error: 0 | fatal: 2
+- warn: 0 | error: 0 | fatal: 3
 
 ### 今日 fatal（最近 10 条）
 
 ```
 [2026-11-03 06:19:56] [FATAL] 未捕获异常 | {"message":"Cannot read properties of undefined (reading 'is_equipment')","stack":"TypeError: Cannot read properties of undefined (reading 'is_equipment')\n    at USER.fb_quick (/home/mud/mud-test/world/cmd/action/cr.js:115:22)\n    at Timeout._onTimeout (/home/mud/mud-test/os/base.js:116:13)\n    at listOnTimeout (node:internal/timers:605:17)\n    at process.processTimers (node:internal/timers:541:7)"}
 [2026-11-03 06:19:57] [FATAL] 未捕获异常 | {"message":"Cannot read properties of undefined (reading 'is_equipment')","stack":"TypeError: Cannot read properties of undefined (reading 'is_equipment')\n    at USER.fb_quick (/home/mud/mud-test/world/cmd/action/cr.js:115:22)\n    at Timeout._onTimeout (/home/mud/mud-test/os/base.js:116:13)\n    at listOnTimeout (node:internal/timers:605:17)\n    at process.processTimers (node:internal/timers:541:7)"}
+[2026-11-03 06:29:37] [FATAL] 未捕获异常 | {"message":"Cannot read properties of undefined (reading 'is_equipment')","stack":"TypeError: Cannot read properties of undefined (reading 'is_equipment')\n    at USER.fb_quick (/home/mud/mud-test/world/cmd/action/cr.js:115:22)\n    at Timeout._onTimeout (/home/mud/mud-test/os/base.js:116:13)\n    at listOnTimeout (node:internal/timers:605:17)\n    at process.processTimers (node:internal/timers:541:7)"}
 ```
 
 ## 最近部署（deploy.log 末尾 20 行）
