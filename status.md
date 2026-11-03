@@ -1,13 +1,13 @@
 # 服务器运行状态
 
-**心跳**: 2026-11-03 06:17:02 UTC / 北京时间 2026-11-03 14:17:02
+**心跳**: 2026-11-03 06:22:02 UTC / 北京时间 2026-11-03 14:22:02
 
 ## 游戏服
 
 | 服务器 | 状态 | 在线 | 连接 | 运行时长 |
 | --- | --- | --- | --- | --- |
-| 本地测试(100) | running | 1 | 1 | 1d 0h 1m |
-| 正式服(200) | running | 1 | 0 | 1d 0h 1m |
+| 本地测试(100) | running | 1 | 1 | 0d 0h 1m |
+| 正式服(200) | running | 1 | 0 | 1d 0h 6m |
 
 ## Web 服务
 
@@ -17,19 +17,26 @@
 
 | 进程 | 状态 | restarts | 内存 | 运行时长 |
 | --- | --- | --- | --- | --- |
-| mud-game | online | 4300 | 95MB | 1d 0h 1m |
-| mud-web | online | 4191 | 92MB | 1d 0h 1m |
-| mud-game-test | online | 945 | 98MB | 1d 0h 1m |
+| mud-game | online | 4300 | 96MB | 1d 0h 6m |
+| mud-web | online | 4191 | 92MB | 1d 0h 6m |
+| mud-game-test | online | 946 | 123MB | 0d 0h 2m |
 
 ## 系统
 
-- 内存: 1059MB / 3911MB
-- 磁盘: 21% 已用（77G 可用）
+- 内存: 1042MB / 3911MB
+- 磁盘: 22% 已用（77G 可用）
 - 端口监听: 31300✔ 31301✔ 8088✔
 
 ## 今日日志（UTC 2026-11-03）
 
-- warn: 0 | error: 0 | fatal: 0
+- warn: 0 | error: 0 | fatal: 2
+
+### 今日 fatal（最近 10 条）
+
+```
+[2026-11-03 06:19:56] [FATAL] 未捕获异常 | {"message":"Cannot read properties of undefined (reading 'is_equipment')","stack":"TypeError: Cannot read properties of undefined (reading 'is_equipment')\n    at USER.fb_quick (/home/mud/mud-test/world/cmd/action/cr.js:115:22)\n    at Timeout._onTimeout (/home/mud/mud-test/os/base.js:116:13)\n    at listOnTimeout (node:internal/timers:605:17)\n    at process.processTimers (node:internal/timers:541:7)"}
+[2026-11-03 06:19:57] [FATAL] 未捕获异常 | {"message":"Cannot read properties of undefined (reading 'is_equipment')","stack":"TypeError: Cannot read properties of undefined (reading 'is_equipment')\n    at USER.fb_quick (/home/mud/mud-test/world/cmd/action/cr.js:115:22)\n    at Timeout._onTimeout (/home/mud/mud-test/os/base.js:116:13)\n    at listOnTimeout (node:internal/timers:605:17)\n    at process.processTimers (node:internal/timers:541:7)"}
+```
 
 ## 最近部署（deploy.log 末尾 20 行）
 
