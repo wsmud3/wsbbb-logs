@@ -1,13 +1,13 @@
 # 服务器运行状态
 
-**心跳**: 2026-11-04 09:22:01 UTC / 北京时间 2026-11-04 17:22:01
+**心跳**: 2026-11-04 09:27:02 UTC / 北京时间 2026-11-04 17:27:02
 
 ## 游戏服
 
 | 服务器 | 状态 | 在线 | 连接 | 运行时长 |
 | --- | --- | --- | --- | --- |
-| 本地测试(100) | running | 0 | 0 | 0d 11h 55m |
-| 正式服(200) | running | 0 | 0 | 2d 3h 6m |
+| 本地测试(100) | running | 0 | 0 | 0d 12h 0m |
+| 正式服(200) | running | 0 | 0 | 2d 3h 11m |
 
 ## Web 服务
 
@@ -17,13 +17,13 @@
 
 | 进程 | 状态 | restarts | 内存 | 运行时长 |
 | --- | --- | --- | --- | --- |
-| mud-game | online | 4300 | 97MB | 2d 3h 6m |
-| mud-web | online | 4191 | 88MB | 2d 3h 6m |
-| mud-game-test | online | 949 | 103MB | 0d 11h 55m |
+| mud-game | online | 4300 | 97MB | 2d 3h 11m |
+| mud-web | online | 4191 | 88MB | 2d 3h 11m |
+| mud-game-test | online | 949 | 103MB | 0d 12h 0m |
 
 ## 系统
 
-- 内存: 1055MB / 3911MB
+- 内存: 1034MB / 3911MB
 - 磁盘: 22% 已用（77G 可用）
 - 端口监听: 31300✔ 31301✔ 8088✔
 
@@ -34,7 +34,6 @@
 ## 最近部署（deploy.log 末尾 20 行）
 
 ```
-[2026-10-23 09:30:01] Repo ownership/state precheck failed; see above lines. Run check_repo_ownership.js for detail
 [2026-10-23 09:35:08] package-lock.json 未变化且依赖自检通过，跳过 npm ci
 [2026-10-23 09:35:11] Verified release 9124a597d975ab1538c4bbeedfc9765529b45e9a on web and both game services
 [2026-10-30 14:25:10] Deployment failed at line 21; keep player database and inspect services
@@ -54,4 +53,5 @@
 [2026-11-04 08:20:41] Deployment failed at line 21; keep player database and inspect services
 [2026-11-04 08:40:41] Deployment failed at line 21; keep player database and inspect services
 [2026-11-04 09:00:45] Deployment failed at line 21; keep player database and inspect services
+[2026-11-04 09:25:47] Deployment failed at line 21; keep player database and inspect services
 ```
