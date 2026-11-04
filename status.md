@@ -1,13 +1,13 @@
 # 服务器运行状态
 
-**心跳**: 2026-11-04 13:42:02 UTC / 北京时间 2026-11-04 21:42:02
+**心跳**: 2026-11-04 13:47:02 UTC / 北京时间 2026-11-04 21:47:02
 
 ## 游戏服
 
 | 服务器 | 状态 | 在线 | 连接 | 运行时长 |
 | --- | --- | --- | --- | --- |
-| 本地测试(100) | running | 0 | 0 | 0d 16h 15m |
-| 正式服(200) | running | 0 | 0 | 2d 7h 26m |
+| 本地测试(100) | running | 0 | 0 | 0d 16h 20m |
+| 正式服(200) | running | 0 | 0 | 2d 7h 31m |
 
 ## Web 服务
 
@@ -17,13 +17,13 @@
 
 | 进程 | 状态 | restarts | 内存 | 运行时长 |
 | --- | --- | --- | --- | --- |
-| mud-game | online | 4300 | 96MB | 2d 7h 26m |
-| mud-web | online | 4191 | 94MB | 2d 7h 26m |
-| mud-game-test | online | 949 | 108MB | 0d 16h 15m |
+| mud-game | online | 4300 | 96MB | 2d 7h 31m |
+| mud-web | online | 4191 | 94MB | 2d 7h 31m |
+| mud-game-test | online | 949 | 108MB | 0d 16h 20m |
 
 ## 系统
 
-- 内存: 1040MB / 3911MB
+- 内存: 1069MB / 3911MB
 - 磁盘: 22% 已用（77G 可用）
 - 端口监听: 31300✔ 31301✔ 8088✔
 
@@ -34,7 +34,6 @@
 ## 最近部署（deploy.log 末尾 20 行）
 
 ```
-[2026-11-04 06:40:38] Deployment failed at line 21; keep player database and inspect services
 [2026-11-04 07:00:40] Deployment failed at line 21; keep player database and inspect services
 [2026-11-04 07:20:47] Deployment failed at line 21; keep player database and inspect services
 [2026-11-04 07:40:55] Deployment failed at line 21; keep player database and inspect services
@@ -54,4 +53,5 @@
 [2026-11-04 12:30:47] Deployment failed at line 21; keep player database and inspect services
 [2026-11-04 12:55:46] Deployment failed at line 21; keep player database and inspect services
 [2026-11-04 13:20:53] Deployment failed at line 21; keep player database and inspect services
+[2026-11-04 13:45:32] Deployment failed at line 21; keep player database and inspect services
 ```
