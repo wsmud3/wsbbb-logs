@@ -1,13 +1,13 @@
 # 服务器运行状态
 
-**心跳**: 2026-11-20 13:02:02 UTC / 北京时间 2026-11-20 21:02:02
+**心跳**: 2026-11-20 13:07:01 UTC / 北京时间 2026-11-20 21:07:01
 
 ## 游戏服
 
 | 服务器 | 状态 | 在线 | 连接 | 运行时长 |
 | --- | --- | --- | --- | --- |
-| 本地测试(100) | running | 0 | 0 | 0d 0h 6m |
-| 正式服(200) | running | 0 | 0 | 0d 0h 6m |
+| 本地测试(100) | running | 1 | 1 | 0d 0h 0m |
+| 正式服(200) | running | 0 | 0 | 0d 0h 11m |
 
 ## Web 服务
 
@@ -17,19 +17,25 @@
 
 | 进程 | 状态 | restarts | 内存 | 运行时长 |
 | --- | --- | --- | --- | --- |
-| mud-game | online | 4360 | 98MB | 0d 0h 6m |
-| mud-web | online | 4251 | 87MB | 0d 0h 6m |
-| mud-game-test | online | 1043 | 96MB | 0d 0h 6m |
+| mud-game | online | 4360 | 98MB | 0d 0h 11m |
+| mud-web | online | 4251 | 89MB | 0d 0h 11m |
+| mud-game-test | online | 1044 | 126MB | 0d 0h 0m |
 
 ## 系统
 
-- 内存: 829MB / 3911MB
-- 磁盘: 23% 已用（75G 可用）
+- 内存: 886MB / 3911MB
+- 磁盘: 23% 已用（76G 可用）
 - 端口监听: 31300✔ 31301✔ 8088✔
 
 ## 今日日志（UTC 2026-11-20）
 
-- warn: 0 | error: 0 | fatal: 0
+- warn: 0 | error: 0 | fatal: 1
+
+### 今日 fatal（最近 10 条）
+
+```
+[2026-11-20 13:06:02] [FATAL] 未捕获异常 | {"message":"Cannot read properties of undefined (reading 'indexOf')","stack":"TypeError: Cannot read properties of undefined (reading 'indexOf')\n    at Timeout._onTimeout (/home/mud/mud-test/world/skill/force/taijishengong2.js:81:57)\n    at listOnTimeout (node:internal/timers:605:17)\n    at process.processTimers (node:internal/timers:541:7)"}
+```
 
 ## 最近部署（deploy.log 末尾 20 行）
 
