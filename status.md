@@ -1,13 +1,13 @@
 # 服务器运行状态
 
-**心跳**: 2026-11-24 19:57:02 UTC / 北京时间 2026-11-25 03:57:02
+**心跳**: 2026-11-24 20:02:02 UTC / 北京时间 2026-11-25 04:02:02
 
 ## 游戏服
 
 | 服务器 | 状态 | 在线 | 连接 | 运行时长 |
 | --- | --- | --- | --- | --- |
-| 本地测试(100) | running | 0 | 0 | 0d 11h 51m |
-| 正式服(200) | running | 0 | 0 | 0d 11h 51m |
+| 本地测试(100) | running | 0 | 0 | 0d 11h 56m |
+| 正式服(200) | running | 0 | 0 | 0d 11h 56m |
 
 ## Web 服务
 
@@ -17,13 +17,13 @@
 
 | 进程 | 状态 | restarts | 内存 | 运行时长 |
 | --- | --- | --- | --- | --- |
-| mud-game | online | 4384 | 133MB | 0d 11h 51m |
-| mud-web | online | 4275 | 97MB | 0d 11h 51m |
-| mud-game-test | online | 1081 | 139MB | 0d 11h 51m |
+| mud-game | online | 4384 | 133MB | 0d 11h 56m |
+| mud-web | online | 4275 | 97MB | 0d 11h 56m |
+| mud-game-test | online | 1081 | 139MB | 0d 11h 56m |
 
 ## 系统
 
-- 内存: 921MB / 3911MB
+- 内存: 932MB / 3911MB
 - 磁盘: 22% 已用（76G 可用）
 - 端口监听: 31300✔ 31301✔ 8088✔
 
@@ -34,7 +34,6 @@
 ## 最近部署（deploy.log 末尾 20 行）
 
 ```
-[2026-11-24 04:10:10] package-lock.json 未变化且依赖自检通过，跳过 npm ci
 [2026-11-24 04:10:15] Verified release b8ff285441a2b26f468f3d4a0323a4742bf21f33 on web and both game services
 [2026-11-24 05:40:12] package-lock.json 未变化且依赖自检通过，跳过 npm ci
 [2026-11-24 05:40:35] Deployment failed at line 60; keep player database and inspect services
@@ -54,4 +53,5 @@
 [2026-11-24 08:00:29] Deployment failed at line 60; keep player database and inspect services
 [2026-11-24 08:05:07] package-lock.json 未变化且依赖自检通过，跳过 npm ci
 [2026-11-24 08:05:12] Verified release 262b3c3ce317f2a4ccc42438c69455d3c575d798 on web and both game services
+[2026-11-24 20:00:06] Deployment failed at line 21; keep player database and inspect services
 ```
